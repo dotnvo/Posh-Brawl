@@ -17,7 +17,8 @@ Function Get-Player {
       [Parameter()][ValidatePattern('[#0289PYLQGRJCUV]')]
       [String]$PlayerTag  = $script:DefaultPlayerTag,
       [String]$Token = $script:Token,
-      [String]$Uri = "$script:BaseUri/$Script:PlayersEndPoint/%23$PlayerTag"
+      [String]$Uri = "$script:BaseUri/$Script:PlayersEndPoint/%23$PlayerTag",
+      [Switch]$BestBrawler
    )
    Process {
       $headers = @{
@@ -32,6 +33,11 @@ Function Get-Player {
       }
       Write-Verbose "Player Tag is set to $PlayerTag"
       $Response = Invoke-RestMethod -Method Get -Uri $Uri -ContentType "application/json" -Headers $Headers
-      return $Response
+      If ($BestBrawler) {
+         $Maximum = ($Response.brawlers.highesttrophies | Measure-Object -Maximum).Maximum
+         $HighestBrawler = $Response.Brawlers | Where-Object {$_.HighestTrophies -eq $Maximum}
+         $Response | Add-Member -NotePropertyName bestbrawler -NotePropertyValue $HighestBrawler
+      }
+         return $Response
    }
 }
