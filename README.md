@@ -16,6 +16,8 @@ $env:PSModulePath -split ";"
 ### How to Setup Environment
 
 1. Create an account and get a free API Key at [https://developer.brawlstars.com/](https://developer.brawlstars.com/)
-2. Run the Connect-BrawlStars function and pass it the proper Token
+2. You'll need to encrypt the contents of an API Key using Windows DPAPI and store that encrypted string in a JSON formatted file. Will provide instructions in the future for this
+3. Import the module
+3.. Run the Connect-BrawlStars -ConfigPath .\PathtoJSON
 ```ps
-    Connect-Brawl -Token "xyz"
+    Connect-BrawlStars -Token "C:\Temp\MyAwesomeFile.JSON"
