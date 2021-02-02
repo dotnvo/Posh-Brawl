@@ -14,8 +14,8 @@ Function Get-Player {
 
    [CmdletBinding()]
    Param (
-      [Parameter(Mandatory)][ValidatePattern('[#0289PYLQGRJCUV]')]
-      [String]$PlayerTag,
+      [Parameter()][ValidatePattern('[#0289PYLQGRJCUV]')]
+      [String]$PlayerTag  = $script:DefaultPlayerTag,
       [String]$Token = $script:Token,
       [String]$Uri = "$script:BaseUri/$Script:PlayersEndPoint/%23$PlayerTag"
    )
