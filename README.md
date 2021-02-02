@@ -20,4 +20,4 @@ $env:PSModulePath -split ";"
 3. Import the module
 3.. Run the Connect-BrawlStars -ConfigPath .\PathtoJSON
 ```ps
-    Connect-Brawl -Token "C:\Temp\MyAwesomeFile.JSON"
+    Connect-BrawlStars -Token "C:\Temp\MyAwesomeFile.JSON"
