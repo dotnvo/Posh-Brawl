@@ -26,11 +26,10 @@ This function imports your configuration during a powershell session for use wit
    [String]$Json = Get-Content $ConfigPath
       
    $Config = $Json | ConvertFrom-Json
-   $Config.APIToken = $Config.APIToken | ConvertTo-SecureString
-   [PSCredential]$creds = New-Object System.Management.Automation.PSCredential -ArgumentList $Config.Username, $Config.apitoken
+
    $DefaultPlayerTag = $Config.DefaultPlayerTag
 
-   $script:Token = $creds.GetNetworkCredential().password
+   $script:Token = Unprotect-CMSMessage -Path .\api.txt
    $script:baseUri = $baseUri
    $script:PlayersEndPoint = $PlayerEndPoint
    $script:ClubsEndpoint = $ClubsEndpoint
