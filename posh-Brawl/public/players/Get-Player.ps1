@@ -15,29 +15,26 @@ Function Get-Player {
    [CmdletBinding()]
    Param (
       [Parameter()][ValidatePattern('[#0289PYLQGRJCUV]')]
-      [String]$PlayerTag  = $script:DefaultPlayerTag,
-      [String]$Token = $script:Token,
-      [String]$Uri = "$script:BaseUri/$Script:PlayersEndPoint/%23$PlayerTag",
+      [String]$PlayerTag = $script:DefaultPlayerTag,
+      [Uri]$Uri = "$script:BaseUri/$Script:PlayersEndPoint/%23$PlayerTag",
       [Switch]$BestBrawler
    )
+   Begin {
+      #Tags are all upper case
+      $PlayerTag = $PlayerTag.ToUpper()
+   }
    Process {
-      $headers = @{
-         authorization = "Bearer $token"
-         }
-      If ($null -eq $Token) {
-      Throw "`$script:token is null. Please run the function Connect-Brawl to set up your session."
-      }
       If ($PlayerTag -match "^#") {
          $PlayerTag = $PlayerTag -replace "^#", ""
          $Uri = "$script:baseUri/$Script:PlayersEndPoint/%23$PlayerTag"
       }
       Write-Verbose "Player Tag is set to $PlayerTag"
-      $Response = Invoke-RestMethod -Method Get -Uri $Uri -ContentType "application/json" -Headers $Headers
+      $Response = Invoke-RestMethod -Method Get -Uri $Uri -ContentType "application/json" -Headers $Script:Headers
       If ($BestBrawler) {
          $Maximum = ($Response.brawlers.highesttrophies | Measure-Object -Maximum).Maximum
-         $HighestBrawler = $Response.Brawlers | Where-Object {$_.HighestTrophies -eq $Maximum}
+         $HighestBrawler = $Response.Brawlers | Where-Object { $_.HighestTrophies -eq $Maximum }
          $Response | Add-Member -NotePropertyName bestbrawler -NotePropertyValue $HighestBrawler
       }
-         return $Response
+      $Response
    }
 }

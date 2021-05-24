@@ -1,5 +1,12 @@
 
 # UNDER CONSTRUCTION STILL
+
+## Prerequisites
+
+Powershell 7.1 or greater. Due do some additional functionality, I decided to require 7.1 for this module.
+Since Brawl Stars API keys are extremely long, and `Get-Credential` password field is limited to 255 characters in the GUI that appears, Powershell 7.1 gets around this limitation, so we can use Windows DPAPI.
+
+
 ## Powershell Wrapper for Brawl Stars
 
 ### How to Install Module (Incomplete)
@@ -18,8 +25,8 @@ $env:PSModulePath -split ";"
 1. No really, I will get to this sometime, I promise.
 ### How to Setup Environment (Incomplete)
 
-1. Create an account and get a free API Key at [https://developer.brawlstars.com/](https://developer.brawlstars.com/)
-2. You'll need to encrypt the contents of an API Key using Windows DPAPI and store that encrypted string in a JSON formatted file. If you have knowledge on how to do this, you'll be able to review the code and see what needs to happen. Otherwise simply use
+1. Create an account and get a free Key (which stores your token) at [https://developer.brawlstars.com/](https://developer.brawlstars.com/). Record the IP Address(s) and name of the Key.
+2. You'll need to encrypt the contents of an API Key `Get-Credential` and store that in a file using `Export-Clixml`. I'll go more into this later. If you have knowledge on how to do this, you'll be able to review the code and see what needs to happen. I'll provide instructions below as well.
 ```ps
     New-ConfigFile
 ```

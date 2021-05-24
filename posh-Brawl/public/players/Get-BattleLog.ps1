@@ -14,24 +14,17 @@ Function Get-BattleLog {
 
    [CmdletBinding()]
    Param (
-      [Parameter(Mandatory)][ValueFrom]
-      [String]$PlayerTag,
-      [String]$Token = $script:token,
-      [String]$Uri = "$script:baseUri/$Script:PlayersEndPoint/%23$PlayerTag/battlelog"
+      [Parameter(ValueFromPipeline)]
+      [String]$PlayerTag = $script:DefaultPlayerTag,
+      [uri]$Uri = "$script:baseUri/$Script:PlayersEndPoint/%23$PlayerTag/battlelog"
    )
    Process {
-      $headers = @{
-         authorization = "Bearer $token"
-         }
-      If ($null -eq $script:token) {
-      Throw "`$script:token is null. Please run the function Connect-Brawl to set up your session."
-      }
       If ($playertag -match "^#") {
          $PlayerTag = $PlayerTag -replace "^#", ""
          $Uri = "$script:baseUri/$Script:PlayersEndPoint/%23$PlayerTag/battlelog"
       }
       Write-Verbose "Player Tag is set to $Playertag"
-      $response = Invoke-RestMethod -Method Get -Uri $Uri -ContentType "application/json" -Headers $Headers
-      return $response
+      $response = Invoke-RestMethod -Method Get -Uri $Uri -ContentType "application/json" -Headers $Script:headers
+      Write-Output $response.items
    }
 }

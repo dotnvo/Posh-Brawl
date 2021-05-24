@@ -1,6 +1,6 @@
-﻿Get-ChildItem (Join-Path -Path $PSScriptRoot '*.ps1') -Recurse |
-    ForEach-Object {
-    Write-Verbose ("Importing sub-module {0}." -f $_.FullName)
-    . $_.FullName | Out-Null
-} 
-Export-ModuleMember -Function '*' -Cmdlet '*' -Alias '*' -Variable '*'
+﻿$Script:moduleBase = $PSScriptRoot
+
+Get-ChildItem -Path $PSScriptRoot\public\*.ps1, $PSScriptRoot\private\*.ps1 -Recurse -ErrorAction SilentlyContinue |
+ForEach-Object {
+    . $_.FullName
+}
