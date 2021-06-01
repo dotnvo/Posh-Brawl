@@ -7,10 +7,7 @@ Function Get-BattleData {
 .EXAMPLE
 .NOTES
    https://developer.brawlstars.com/#/documentation
-
-
 #>
-
    [CmdletBinding()]
    Param (
       [Parameter(ValueFromPipeline)]
@@ -18,6 +15,9 @@ Function Get-BattleData {
       [Switch]$IgnoreDraws
    )
    Begin {
+      If ($Script:ConnnectionComplete -ne 1) {
+         Write-Error -Message "Please run Connect-BrawlStars to configure your current session." -ErrorAction Stop
+      }
       #Need to be build a complete dataset for calculations
       $PlayerName = (Get-Player -PlayerTag $PlayerTag).name
       $response = Get-BattleLog -PlayerTag $PlayerTag
@@ -64,17 +64,13 @@ Function Get-BattleData {
                "TotalGames"           = $TotalGames
                "TotalGames(No Draws)" = $CalculatedGames
                "Modes"                = $ModesPlayed
-                  
-   
             }
-
          }
          { (-not($IgnoreDraws)) } {
             If ($DrawCount) {
                Write-Verbose "Draws detected.."
                $Percentage = (($WinCount + (.5 * $DrawCount)) / $TotalGames) * 100
                $Final = [math]::Round($Percentage, 2)
-   
             } Else {
                $Percentage = ($WinCount / $TotalGames) * 100
                $Final = [math]::Round($Percentage, 2)
@@ -95,7 +91,6 @@ Function Get-BattleData {
                "TotalGames"           = $TotalGames
                "Modes"                = $ModesPlayed
             }
-
          }
       }
       New-Object  -TypeName PSCustomObject -Property $Properties

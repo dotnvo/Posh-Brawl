@@ -77,31 +77,33 @@ Function Get-Brawler {
       [Parameter(ParameterSetName = 'All')]
       [Switch]$All
    )
+   Begin {
+      If ($Script:ConnnectionComplete -ne 1) {
+         Write-Error -Message "Please run Connect-BrawlStars to configure your current session." -ErrorAction Stop
+      }
+   }
    Process {
       Write-Verbose -Message "ParameterSetName : $($PSCmdlet.ParameterSetName)"
       switch ($PSCmdlet.ParameterSetName) {
          BrawlerID { 
-            [Uri]$Uri = "$script:baseUri/$script:BrawlersEndpoint/$BrawlerID"
+            [Uri]$Uri = "$script:BrawlersEndpoint/$BrawlerID"
             Write-Verbose "Brawler ID is set to $BrawlerID"
-            $Response = Invoke-RestMethod -Method Get -Uri $Uri -ContentType "application/json" -Headers $Script:headers
-            $Response
+            Invoke-BrawlRequest -URI $URI
          }
          Name {
             $Path = $Script:moduleBase + "\assets" + "\BrawlerIndex.csv"
             $BrawlerIndex = Import-Csv -Path $Path
             $BrawlerID = ($brawlerindex | Where-Object -Property Name -EQ $Name).id
             if ($BrawlerID) {
-               [Uri]$Uri = "$script:baseUri/$script:BrawlersEndpoint/$BrawlerID"
-               $Response = Invoke-RestMethod -Method Get -Uri $Uri -ContentType "application/json" -Headers $Script:headers
-               $Response
+               [Uri]$Uri = "$script:BrawlersEndpoint/$BrawlerID"
+               Invoke-BrawlRequest -URI $URI
             } Else {
                Write-Warning -Message "Brawler : $name not found. Confirm correct spelling of brawler and ensure the index file is updated, then try again..."
             }
          }
          All {
-            [Uri]$Uri = "$script:baseUri/$script:BrawlersEndpoint"
-            $Response = Invoke-RestMethod -Method Get -Uri $Uri -ContentType "application/json" -Headers $Script:headers
-            $Response.items
+            [Uri]$Uri = "$script:BrawlersEndpoint"
+            Invoke-BrawlRequest -Uri $Uri
          }
       }
    }

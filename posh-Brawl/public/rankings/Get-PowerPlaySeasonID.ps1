@@ -8,20 +8,20 @@ Function Get-PowerPlaySeasonID {
    Get-ClubRankings
 .NOTES
    https://developer.brawlstars.com/#/documentation
-
-
 #>
-
    [CmdletBinding()]
    Param (
       [Parameter(ValueFromPipeline)][AllowNull()][ValidatePattern('^[A-Za-z]{2}$|^Global$')]
       [String]$CountryCode,
       [ValidateRange(1, 200)]
       [int]$Limit = 200,
-      [Uri]$Uri = "$script:BaseUri/$script:RankingsEndpoint/Global/powerplay/seasons?limit=$Limit",
       [String]$Date
    )
    Begin {
+      [Uri]$Uri = "$script:RankingsEndpoint/Global/powerplay/seasons?limit=$Limit"
+      If ($Script:ConnnectionComplete -ne 1) {
+         Write-Error -Message "Please run Connect-BrawlStars to configure your current session." -ErrorAction Stop
+      }
       $pattern = '^(?<Year>\d{4})(?<Month>\d{2})(?<Day>\d{2}T\d{2})(?<Hour>\d{2})(?<Minute>\d{2})(?<Seconds>\.\d{3}Z)$'
       If ($Date) {
          If ($Date -notmatch '\d{1,2}-\d{1,2}-\d{4}') {
@@ -35,11 +35,11 @@ Function Get-PowerPlaySeasonID {
       $replacement = '${Year}-${Month}-${Day}:${Hour}:${Minute}${Seconds}'
    }
    Process {
-      if ($Global -or (!($CountryCode))) {
+      if ($Global -or (-not($CountryCode))) {
          Write-Verbose -Message "Global Switch detected or country code is null, setting search to Global..."
          Try {
-            $Response = Invoke-RestMethod -Method Get -Uri $Uri -ContentType "application/json" -Headers $Script:headers
-            ForEach ($Record in $Response.Items) {
+            $Response = Invoke-BrawlRequest -Uri $URI
+            ForEach ($Record in $Response) {
                $Record.startTime = Get-Date ($Record.startTime -replace $pattern, $replacement) -Format "MM-dd-yyyy"
                $Record.endTime = Get-Date ($Record.endTime -replace $pattern, $replacement) -Format "MM-dd-yyyy"
             }
@@ -47,20 +47,19 @@ Function Get-PowerPlaySeasonID {
          }
       } else {
          Try {
-            [Uri]$Uri = "$script:BaseUri/$script:RankingsEndpoint/$CountryCode/powerplay/seasons?limit=$limit"
-            $Response = Invoke-RestMethod -Method Get -Uri $Uri -ContentType "application/json" -Headers $Script:headers
-            ForEach ($Record in $Response.Items) {
+            [Uri]$Uri = "$script:RankingsEndpoint/$CountryCode/powerplay/seasons?limit=$limit"
+            $Response = Invoke-BrawlRequest -Uri $URI
+            ForEach ($Record in $Response) {
                $Record.startTime = Get-Date ($Record.startTime -replace $pattern, $replacement) -Format "MM-dd-yyyy"
                $Record.endTime = Get-Date ($Record.endTime -replace $pattern, $replacement) -Format "MM-dd-yyyy"
             }
          } catch {
          }
       }
-      $object = $Response.items | Select-Object id, @{Name = "startDate"; Expression = { $_.Starttime } }, @{Name = "endDate"; Expression = { $_.Endtime } }
+      $object = $Response | Select-Object id, @{Name = "startDate"; Expression = { $_.Starttime } }, @{Name = "endDate"; Expression = { $_.Endtime } }
       if ($Date) {
          Write-Verbose "Date set to : [DateTime]$Date"
-         $FinalObject = $object | Where-Object { ([DateTime]$Date -ge [DateTime]$_.StartDate) -and ([DateTime]$Date -le [DateTime]$_.endDate) }
-         $FinalObject
+         $object | Where-Object { ([DateTime]$Date -ge [DateTime]$_.StartDate) -and ([DateTime]$Date -le [DateTime]$_.endDate) }
       } Else {
          $Object
       }

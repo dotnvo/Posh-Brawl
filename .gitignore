@@ -1,5 +1,5 @@
 # Custom
-default.json
+Configs/*.json
 *.Secret
 
 # https://www.gitignore.io starts below

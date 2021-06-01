@@ -56,6 +56,10 @@ Function New-BrawlConfig {
             PlayerTag  = $DefaultPlayerTag
             PlayerName = $BrawlerName
          }
+         FavoriteClubs = [Array][ordered]@{
+            ClubTag  = $null
+            ClubName = $null
+         }
       }
       $Config = (New-Object -TypeName PSCustomObject -Property $Properties) | ConvertTo-Json
       If (!(Test-Path -Path $ConfigFile)) {

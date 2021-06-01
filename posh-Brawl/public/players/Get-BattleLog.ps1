@@ -15,18 +15,23 @@ Function Get-BattleLog {
    [CmdletBinding()]
    Param (
       [Parameter(ValueFromPipeline)]
-      [String]$PlayerTags = $script:DefaultPlayerTag,
-      [uri]$Uri = "$script:baseUri/$Script:PlayersEndPoint/%23$PlayerTag/battlelog"
+      [String]$PlayerTag = $script:DefaultPlayerTag,
+      [uri]$Uri = "$Script:PlayersEndPoint/%23$PlayerTag/battlelog"
    )
+   Begin {
+      If ($Script:ConnnectionComplete -ne 1) {
+         Write-Error -Message "Please run Connect-BrawlStars to configure your current session." -ErrorAction Stop
+      }
+   }
    Process {
          #Tags are all upper case
          $PlayerTag = $PlayerTag.ToUpper()
          If ($PlayerTag -match "^#") {
             $PlayerTag = $PlayerTag -replace "^#", ""
-            $Uri = "$script:baseUri/$Script:PlayersEndPoint/%23$PlayerTag/battlelog"
+            $Uri = "$Script:PlayersEndPoint/%23$PlayerTag/battlelog"
          }
          Write-Verbose "Player Tag is set to $PlayerTag"
-         $response = Invoke-RestMethod -Method Get -Uri $Uri -ContentType "application/json" -Headers $Script:headers
-         $response.items
+         $Response = Invoke-BrawlRequest -uri $Uri
+         $Response
    }
 }

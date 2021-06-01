@@ -30,13 +30,19 @@ Function Connect-BrawlStars {
 
    [CmdletBinding()]
    Param (
-      [String]$Script:ConfigFile = "$Script:DefaultConfig",
+      [String]$Script:BrawlConfigFile = "$Script:DefaultConfig",
       [String]$Script:KeyFile = "$Script:DefaultKeyFile"
    )
 
    Begin {
-      $Config = Get-Content -Path $ConfigFile | ConvertFrom-Json
-      $script:DefaultPlayerTag = $Config.Defaults.DefaultPlayerTag
+      $global:BrawlConfig = Get-Content -Path $BrawlConfigFile | ConvertFrom-Json
+      $script:DefaultPlayerTag = $BrawlConfig.Defaults.DefaultPlayerTag
+      $Script:FavoritePlayers = $BrawlConfig.FavoritePlayers
+      $Script:FavoriteClubs = $BrawlConfig.FavoriteClubs
+
+      $global:BrawlAutoCompletePlayers = $BrawlConfig.FavoritePlayers.PlayerName | ForEach-Object {
+         "`"$_`""
+      }
    }
    Process {
       If (Test-Path -Path $KeyFile) {
@@ -66,16 +72,11 @@ Function Connect-BrawlStars {
       $Script:headers = @{
          authorization = "Bearer $token"
       }
-      Invoke-BrawlRequest -URI $BaseURI
-      <#
-      Invoke-RestMethod -Method Get -Uri $BaseURI -Headers $Script:headers -StatusCodeVariable StatusCode | Out-Null
-      if ($StatusCode -eq "200") {
-         Write-Host "Connection Successful. $($Creds.Username) contains a valid token"
-         $Script:ConnectionComplete = 1
-         $Config
-      } Else {
-         $statuscode
+      $Response = Invoke-BrawlRequest -URI $script:BaseURI
+      If (!($Response.Reason)) {
+         Write-Output "Connection Successful."
+         $Script:ConnnectionComplete = 1
       }
-      #>
+      
    }
 }
