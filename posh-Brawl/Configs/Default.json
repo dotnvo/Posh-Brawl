@@ -1,0 +1,42 @@
+{
+  "Defaults": [
+    {
+      "DefaultPlayerTag": "#C08UC2C",
+      "DefaultCountry": "US"
+    }
+  ],
+  "Credentials": [
+    {
+      "FileName": "Test.Secret",
+      "Description": "Testing"
+    },
+    {
+      "FileName": "Production.Secret",
+      "Description": "Production API Key used for Production workflows. Allowed IPs {73.102.140.224}"
+    }
+  ],
+  "FavoritePlayers": [
+    {
+      "PlayerTag": "#C08UC2C",
+      "PlayerName": "Imagine"
+    },
+    {
+      "PlayerTag": "#2YVCPRG9",
+      "PlayerName": "(o'.')o Kirby"
+    },
+    {
+      "PlayerTag": "#2JCQR999",
+      "PlayerName": "Edwin"
+    },
+    {
+      "PlayerTag": "#99QU9PU2",
+      "PlayerName": "tylo ♡"
+    }
+  ],
+  "FavoriteClubs": [
+    {
+      "ClubTag": "#QV2LQ8GR",
+      "ClubName": "Havoc"
+    }
+  ]
+}
