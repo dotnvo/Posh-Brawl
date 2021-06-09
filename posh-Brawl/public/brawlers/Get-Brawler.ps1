@@ -6,12 +6,6 @@ Function Get-Brawler {
    Get-Brawler, simply put, returns brawler information.
 .PARAMETER BrawlerID
    Part of the ParameterSet 'BrawlerID'.
-
-.PARAMETER Search
-   Search string. This does a 'like' operator comparison locally (EG. Where-Object {$_.name -like "*$Search*"}) after returning an object with all the brawlers.
-   https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_comparison_operators?view=powershell-7.1
-   Part of the ParameterSet 'Search'.
-
 .PARAMETER Name
    The Name of the Brawler.
    Part of the ParameterSet 'Name'. 
@@ -21,8 +15,8 @@ Function Get-Brawler {
    This will return all brawlers from the /brawlers endpoint.
 .OUTPUTS
    Depends on the parameter set being used and what value is being returned. For most purposes, they can be accessed and used the same.
-   System.Object[] is returned for ParameterSets: All, Search (If more one match is found, Base Type System.Array), 
-   PSCustomObject is returned for ParameterSets: BrawlerID, Search (If one match is found)
+   System.Object[] is returned for ParameterSets: All
+   PSCustomObject is returned for ParameterSets: BrawlerID, Name
 .EXAMPLE
    Get-brawler
 
@@ -39,14 +33,12 @@ Function Get-Brawler {
 16000008 NITA          {@{id=23000084; name=BEAR WITH ME}, @{id=23000136; name=HYPER BEAR}}          {@{id=23000249; name=BEAR PAWS}, @{id=23000314; name=FAUX FUR}}
 16000009 DYNAMIKE      {@{id=23000085; name=DYNA-JUMP}, @{id=23000155; name=DEMOLITION}}             {@{id=23000258; name=FIDGET SPINNER}, @{id=23000294; name=SATCHEL CHARGE}}
 16000010 EL PRIMO      {@{id=23000086; name=EL FUEGO}, @{id=23000140; name=METEOR RUSH}}             {@{id=23000264; name=SUPLEX SUPPLEMENT}, @{id=23000292; name=ASTEROID BELT}}
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Trimmed Response for Comment~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Trimmed Response for Comment-based help~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 .EXAMPLE
    Get-Brawler -BrawlerID "16000011"
             id name   starPowers                                                               gadgets
             -- ----   ----------                                                               -------
       16000011 MORTIS {@{id=23000087; name=CREEPY HARVEST}, @{id=23000154; name=COILED SNAKE}} {@{id=23000265; name=COMBO SPINNER}, @{id=23000290; name=SURVIVAL SHOVEL}}
-.EXAMPLE
-   Get-Brawler -Search Shelly
 .EXAMPLE
    Get-Brawler -Name Brock
             id name  starPowers                                                           gadgets
@@ -85,31 +77,33 @@ Function Get-Brawler {
       [Parameter(ParameterSetName = 'All')]
       [Switch]$All
    )
+   Begin {
+      If ($Script:ConnnectionComplete -ne 1) {
+         Write-Error -Message "Please run Connect-BrawlStars to configure your current session." -ErrorAction Stop
+      }
+   }
    Process {
       Write-Verbose -Message "ParameterSetName : $($PSCmdlet.ParameterSetName)"
       switch ($PSCmdlet.ParameterSetName) {
          BrawlerID { 
-            [Uri]$Uri = "$script:baseUri/$script:BrawlersEndpoint/$BrawlerID"
+            [Uri]$Uri = "$script:BrawlersEndpoint/$BrawlerID"
             Write-Verbose "Brawler ID is set to $BrawlerID"
-            $Response = Invoke-RestMethod -Method Get -Uri $Uri -ContentType "application/json" -Headers $Script:headers
-            $Response
+            Invoke-BrawlRequest -URI $URI
          }
          Name {
             $Path = $Script:moduleBase + "\assets" + "\BrawlerIndex.csv"
             $BrawlerIndex = Import-Csv -Path $Path
             $BrawlerID = ($brawlerindex | Where-Object -Property Name -EQ $Name).id
             if ($BrawlerID) {
-               [Uri]$Uri = "$script:baseUri/$script:BrawlersEndpoint/$BrawlerID"
-               $Response = Invoke-RestMethod -Method Get -Uri $Uri -ContentType "application/json" -Headers $Script:headers
-               $Response
+               [Uri]$Uri = "$script:BrawlersEndpoint/$BrawlerID"
+               Invoke-BrawlRequest -URI $URI
             } Else {
                Write-Warning -Message "Brawler : $name not found. Confirm correct spelling of brawler and ensure the index file is updated, then try again..."
             }
          }
          All {
-            [Uri]$Uri = "$script:baseUri/$script:BrawlersEndpoint"
-            $Response = Invoke-RestMethod -Method Get -Uri $Uri -ContentType "application/json" -Headers $Script:headers
-            $Response.items
+            [Uri]$Uri = "$script:BrawlersEndpoint"
+            Invoke-BrawlRequest -Uri $Uri
          }
       }
    }

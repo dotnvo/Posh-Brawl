@@ -16,26 +16,18 @@ Function Get-BrawlerRankings {
    Param (
       [Parameter(ValueFromPipeline)][AllowNull()][ValidatePattern('[A-Za-z]')]
       [String]$CountryCode,
-      [ValidateRange(1,200)]
+      [ValidateRange(1, 200)]
       [int]$Limit = 200,
-      [Uri]$Uri = "$script:BaseUri/$script:RankingsEndpoint/Global/brawlers/$brawlerid?limit=$Limit",
+      [Uri]$Uri = "$script:RankingsEndpoint/Global/brawlers/$brawlerid?limit=$Limit",
       [Switch]$Global
    )
    Process {
       if ($Global -or (!($CountryCode))) {
          Write-Verbose -Message "Global Switch detected or country code is null, setting search to Global..."
-         Try {
-            $Response = Invoke-RestMethod -Method Get -Uri $Uri -ContentType "application/json" -Headers $Script:headers
-            $Response.items
-         } catch {
-         }
+         Invoke-BrawlRequest -Uri $URI
       } else {
-         Try {
-            [Uri]$Uri = "$script:BaseUri/$script:RankingsEndpoint/$CountryCode/players?limit=$limit"
-            $Response = Invoke-RestMethod -Method Get -Uri $Uri -ContentType "application/json" -Headers $Script:headers
-            $Response.items
-         } catch {
-         }
+         [Uri]$Uri = "$script:RankingsEndpoint/$CountryCode/players?limit=$limit"
+         Invoke-BrawlRequest -Uri $URI
       }
    }
 }

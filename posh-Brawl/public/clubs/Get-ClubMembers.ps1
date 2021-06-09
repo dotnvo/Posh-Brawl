@@ -14,18 +14,22 @@ Function Get-ClubMembers {
 
    [CmdletBinding()]
    Param (
-      [Parameter(Mandatory)]
-      [String]$ClubTag,
-      [Uri]$Uri = "$script:baseUri/$script:ClubsEndpoint/%23$ClubTag/members"
+      [Parameter(ValueFromPipeline,Mandatory)]
+      [String]$ClubTag
    )
+   Begin {
+      [Uri]$Uri = "$script:ClubsEndpoint/%23$ClubTag/members"
+      If ($Script:ConnnectionComplete -ne 1) {
+         Write-Error -Message "Please run Connect-BrawlStars to configure your current session." -ErrorAction Stop
+      }
+   }
    Process {
       If ($ClubTag -match "^#") {
          $ClubTag = $ClubTag -replace "^#", ""
-         $Uri = "$script:baseUri/$script:ClubsEndpoint/%23$ClubTag/members"
+         $Uri = "$script:ClubsEndpoint/%23$ClubTag/members"
       }
       Write-Verbose "Player Tag is set to $ClubTag"
-      $response = Invoke-RestMethod -Method Get -Uri $Uri -ContentType "application/json" -Headers $Script:headers
-      $response = $response.items
-      Write-Output $response
+      Invoke-BrawlRequest -uri $Uri
+
    }
 }

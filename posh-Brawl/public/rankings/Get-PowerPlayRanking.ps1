@@ -22,6 +22,9 @@ Function Get-PowerPlayRanking {
       [String]$SeasonID = "latest"
    )
    Begin {
+      If ($Script:ConnnectionComplete -ne 1) {
+         Write-Error -Message "Please run Connect-BrawlStars to configure your current session." -ErrorAction Stop
+      }
    }
    Process {
    }

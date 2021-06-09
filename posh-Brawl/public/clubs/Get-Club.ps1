@@ -16,17 +16,21 @@ Function Get-Club {
    [CmdletBinding()]
    Param (
       [Parameter(Mandatory)][ValidatePattern('[#0289PYLQGRJCUV]')]
-      [String]$ClubTag,
-      [Uri]$Uri = "$script:baseUri/$script:ClubsEndpoint/%23$ClubTag"
+      [String]$ClubTag
    )
+   Begin {
+      [Uri]$Uri = "$script:ClubsEndpoint/%23$ClubTag"
+      If ($Script:ConnnectionComplete -ne 1) {
+         Write-Error -Message "Please run Connect-BrawlStars to configure your current session." -ErrorAction Stop
+      }
+   }
    Process {
       #Club tags start with hash character '#' and that needs to be URL-encoded properly to work in URL, so for example clan tag '#ABC' would become '%232ABC' in the URL.
       If ($ClubTag -match "^#") {
          $ClubTag = $ClubTag -replace "^#", ""
-         $Uri = "$script:baseUri/$script:ClubsEndpoint/%23$ClubTag"
+         $Uri = "$script:ClubsEndpoint/%23$ClubTag"
       }
       Write-Verbose "Player Tag is set to $ClubTag"
-      $response = Invoke-RestMethod -Method Get -Uri $Uri -ContentType "application/json" -Headers $Script:headers
-      Write-Output $response
+      Invoke-BrawlRequest -Uri $URI
    }
 }
