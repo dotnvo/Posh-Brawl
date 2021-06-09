@@ -1,6 +1,7 @@
 # Custom
 posh-brawl/Configs/*
 *.Secret
+*.json
 
 # https://www.gitignore.io starts below
 # Created by https://www.toptal.com/developers/gitignore/api/git,windows,dropbox,microsoftoffice,visualstudiocode
