@@ -1,16 +1,15 @@
 Function Invoke-BrawlRequest {
    <#
 .SYNOPSIS
-   Short description
+   Private function that is invoked when a command is ran
 .DESCRIPTION
-   Long description
+   This essentially acts as a wrapper for an API call to the Brawl Stars API.
+   It utilizes Invoke-Restmethod under the hood. This is a private function so it will not be
+   available upon import.
 .EXAMPLE
-   PS C:\> <example usage>
-   Explanation of what the example does
-.INPUTS
-   Inputs (if any)
-.OUTPUTS
-   Output (if any)
+   Invoke-BrawlRequest -uri $uri
+.PARAMETER Uri
+   URI of the resource/endpoint for Brawl Stars API.
 .NOTES
     https://developer.brawlstars.com/#/documentation
 #>
@@ -22,14 +21,12 @@ Function Invoke-BrawlRequest {
    )
    Begin {
       $ErrorActionPreference = "Stop"
-      If (!($Script:ConnectionComplete -ne 1)) {
-         Write-Error -Message "Missing Connection Information for Brawl Stars API" -RecommendedAction "Please run Connect-BrawlStars function to configure connection"
-      }
    }
    Process {
+      Write-Verbose -Message "Invoke-BrawlRequest: URI set to $URI"
       $Response = Invoke-RestMethod -Method Get -Uri $Uri -Headers $Script:headers -ContentType "application/json" -SkipHttpErrorCheck -StatusCodeVariable StatusCode
       if ($Response.Reason) {
-         Write-Error -Message "Error Occured : $($Response.Reason) , $($Response.Message), StatusCode: $StatusCode."
+         Write-Error -Message "$($Response.Reason),$($Response.Message),StatusCode: $StatusCode."
       }
       switch -wildcard ($URI) {
          "$Script:PlayersEndPoint/%23$PlayerTag/battlelog" { $Response.items }
