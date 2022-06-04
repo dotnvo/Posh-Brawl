@@ -1,0 +1,26 @@
+name: CI
+on: [workflow_dispatch]
+jobs:
+  test:
+    name: Run Tests
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest]
+    steps:
+    - uses: actions/checkout@v1
+    - name: Test
+      shell: pwsh
+      run: ./build.ps1 -Task Test -Bootstrap
+  publish:
+    name: Publish
+        runs-on: ubuntu-latest
+        steps:
+          - uses: actions/checkout@v1
+          - name: Publish
+            env:
+              APIKEY: ${{ secrets.APIKEY }}
+            run: .\publish.ps1
+            shell: pwsh
+

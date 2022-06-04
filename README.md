@@ -1,15 +1,16 @@
+PowerShell Wrapper for Brawl Stars API
 
-# UNDER CONSTRUCTION STILL
+## Overview
+
+This module is still in the making.
 
 ## Prerequisites
 
-Powershell 7.1 or greater. Due do some additional functionality, I decided to require 7.1 for this module.
-Since Brawl Stars API keys are extremely long, and `Get-Credential` password field is limited to 255 characters in the GUI that appears, Powershell 7.1 gets around this limitation, so we can use Windows DPAPI.
+Powershell 7. Since Brawl Stars API keys are extremely long, and `Get-Credential` password field is limited to 255 characters in the GUI that appears, Powershell 7.1 gets around this limitation, so we can use Windows DPAPI.
 
+## Installation 
 
-## Powershell Wrapper for Brawl Stars
-
-### How to Install Module (Incomplete)
+Incomplete.
 
 1. Perform a git clone of this repo to a local directory of your choice
 ```sh
@@ -20,9 +21,6 @@ git clone https://github.com/your_username_/Project-Name.git
 $env:PSModulePath -split ";"
 ```
 
-### How to Import Module into current session (Incomplete)
-
-1. No really, I will get to this sometime, I promise.
 ### How to Setup Environment (Incomplete)
 
 1. Create an account and get a free Key (which stores your token) at [https://developer.brawlstars.com/](https://developer.brawlstars.com/). Record the IP Address(s) and name of the Key.
