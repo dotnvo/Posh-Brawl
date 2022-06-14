@@ -1,389 +1,389 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
-<test-results xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="nunit_schema_2.5.xsd" name="Pester" total="166" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="2" invalid="0" date="2022-06-04" time="10:14:57">
-  <environment cwd="C:\Users\nrvonogd\Documents\Github\Posh-Brawl\tests" clr-version="Unknown" machine-name="JARVIS" user="nrvonogd" platform="Microsoft Windows 11 Education|C:\WINDOWS|\Device\Harddisk0\Partition3" nunit-version="2.5.8.0" os-version="10.0.22000" user-domain="ADS" />
+<test-results xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="nunit_schema_2.5.xsd" name="Pester" total="166" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="2" invalid="0" date="2022-06-14" time="00:32:50">
+  <environment user="nrvonogd" nunit-version="2.5.8.0" user-domain="ADS" clr-version="Unknown" os-version="10.0.22000" platform="Microsoft Windows 11 Education|C:\WINDOWS|\Device\Harddisk0\Partition3" machine-name="JARVIS" cwd="C:\Users\nrvonogd\Documents\Github\Posh-Brawl\tests" />
   <culture-info current-culture="en-US" current-uiculture="en-US" />
-  <test-suite type="TestFixture" name="Pester" executed="True" result="Ignored" success="True" time="0.8122" asserts="0" description="Pester">
+  <test-suite type="TestFixture" name="Pester" executed="True" result="Ignored" success="True" time="1.6956" asserts="0" description="Pester">
     <results>
-      <test-suite type="TestFixture" name="C:\Users\nrvonogd\Documents\Github\Posh-Brawl\tests\Help.tests.ps1" executed="True" result="Success" success="True" time="0.643" asserts="0" description="C:\Users\nrvonogd\Documents\Github\Posh-Brawl\tests\Help.tests.ps1">
+      <test-suite type="TestFixture" name="C:\Users\nrvonogd\Documents\Github\Posh-Brawl\tests\Help.tests.ps1" executed="True" result="Success" success="True" time="1.3713" asserts="0" description="C:\Users\nrvonogd\Documents\Github\Posh-Brawl\tests\Help.tests.ps1">
         <results>
-          <test-suite type="TestFixture" name="Test help for Connect-BrawlStars" executed="True" result="Success" success="True" time="0.029" asserts="0" description="Test help for Connect-BrawlStars">
+          <test-suite type="TestFixture" name="Test help for Connect-BrawlStars" executed="True" result="Success" success="True" time="0.2369" asserts="0" description="Test help for Connect-BrawlStars">
             <results>
-              <test-suite type="TestFixture" name="Test help for Connect-BrawlStars.Parameter KeyFile" executed="True" result="Success" success="True" time="0.0197" asserts="0" description="Test help for Connect-BrawlStars.Parameter KeyFile">
+              <test-suite type="TestFixture" name="Test help for Connect-BrawlStars.Parameter KeyFile" executed="True" result="Success" success="True" time="0.2125" asserts="0" description="Test help for Connect-BrawlStars.Parameter KeyFile">
                 <results>
-                  <test-case description="Has description" name="Test help for Connect-BrawlStars.Parameter KeyFile.Has description" time="0.0029" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="Has correct [mandatory] value" name="Test help for Connect-BrawlStars.Parameter KeyFile.Has correct [mandatory] value" time="0.0024" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="Has correct parameter type" name="Test help for Connect-BrawlStars.Parameter KeyFile.Has correct parameter type" time="0.0022" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has description" name="Test help for Connect-BrawlStars.Parameter KeyFile.Has description" time="0.0093" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has correct [mandatory] value" name="Test help for Connect-BrawlStars.Parameter KeyFile.Has correct [mandatory] value" time="0.0208" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has correct parameter type" name="Test help for Connect-BrawlStars.Parameter KeyFile.Has correct parameter type" time="0.0068" asserts="0" success="True" result="Success" executed="True" />
                 </results>
               </test-suite>
-              <test-case description="Help is not auto-generated" name="Test help for Connect-BrawlStars.Help is not auto-generated" time="0.0042" asserts="0" success="True" result="Success" executed="True" />
-              <test-case description="Has description" name="Test help for Connect-BrawlStars.Has description" time="0.0021" asserts="0" success="True" result="Success" executed="True" />
-              <test-case description="Has example code" name="Test help for Connect-BrawlStars.Has example code" time="0.0021" asserts="0" success="True" result="Success" executed="True" />
-              <test-case description="Has example help" name="Test help for Connect-BrawlStars.Has example help" time="0.0016" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Help is not auto-generated" name="Test help for Connect-BrawlStars.Help is not auto-generated" time="0.0957" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Has description" name="Test help for Connect-BrawlStars.Has description" time="0.0097" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Has example code" name="Test help for Connect-BrawlStars.Has example code" time="0.0085" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Has example help" name="Test help for Connect-BrawlStars.Has example help" time="0.0073" asserts="0" success="True" result="Success" executed="True" />
             </results>
           </test-suite>
-          <test-suite type="TestFixture" name="Test help for Get-BattleData" executed="True" result="Success" success="True" time="0.0642" asserts="0" description="Test help for Get-BattleData">
+          <test-suite type="TestFixture" name="Test help for Get-BattleData" executed="True" result="Success" success="True" time="0.2805" asserts="0" description="Test help for Get-BattleData">
             <results>
-              <test-suite type="TestFixture" name="Test help for Get-BattleData.Parameter IgnoreDraws" executed="True" result="Success" success="True" time="0.0139" asserts="0" description="Test help for Get-BattleData.Parameter IgnoreDraws">
+              <test-suite type="TestFixture" name="Test help for Get-BattleData.Parameter IgnoreDraws" executed="True" result="Success" success="True" time="0.0209" asserts="0" description="Test help for Get-BattleData.Parameter IgnoreDraws">
                 <results>
-                  <test-case description="Has description" name="Test help for Get-BattleData.Parameter IgnoreDraws.Has description" time="0.0018" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="Has correct [mandatory] value" name="Test help for Get-BattleData.Parameter IgnoreDraws.Has correct [mandatory] value" time="0.0016" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="Has correct parameter type" name="Test help for Get-BattleData.Parameter IgnoreDraws.Has correct parameter type" time="0.0016" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has description" name="Test help for Get-BattleData.Parameter IgnoreDraws.Has description" time="0.0024" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has correct [mandatory] value" name="Test help for Get-BattleData.Parameter IgnoreDraws.Has correct [mandatory] value" time="0.0025" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has correct parameter type" name="Test help for Get-BattleData.Parameter IgnoreDraws.Has correct parameter type" time="0.0021" asserts="0" success="True" result="Success" executed="True" />
                 </results>
               </test-suite>
-              <test-suite type="TestFixture" name="Test help for Get-BattleData.Parameter PlayerTag" executed="True" result="Success" success="True" time="0.0275" asserts="0" description="Test help for Get-BattleData.Parameter PlayerTag">
+              <test-suite type="TestFixture" name="Test help for Get-BattleData.Parameter PlayerTag" executed="True" result="Success" success="True" time="0.0345" asserts="0" description="Test help for Get-BattleData.Parameter PlayerTag">
                 <results>
-                  <test-case description="Has description" name="Test help for Get-BattleData.Parameter PlayerTag.Has description" time="0.0018" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="Has correct [mandatory] value" name="Test help for Get-BattleData.Parameter PlayerTag.Has correct [mandatory] value" time="0.0082" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="Has correct parameter type" name="Test help for Get-BattleData.Parameter PlayerTag.Has correct parameter type" time="0.0017" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has description" name="Test help for Get-BattleData.Parameter PlayerTag.Has description" time="0.0034" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has correct [mandatory] value" name="Test help for Get-BattleData.Parameter PlayerTag.Has correct [mandatory] value" time="0.0029" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has correct parameter type" name="Test help for Get-BattleData.Parameter PlayerTag.Has correct parameter type" time="0.0034" asserts="0" success="True" result="Success" executed="True" />
                 </results>
               </test-suite>
-              <test-case description="Help is not auto-generated" name="Test help for Get-BattleData.Help is not auto-generated" time="0.0023" asserts="0" success="True" result="Success" executed="True" />
-              <test-case description="Has description" name="Test help for Get-BattleData.Has description" time="0.0016" asserts="0" success="True" result="Success" executed="True" />
-              <test-case description="Has example code" name="Test help for Get-BattleData.Has example code" time="0.0015" asserts="0" success="True" result="Success" executed="True" />
-              <test-case description="Has example help" name="Test help for Get-BattleData.Has example help" time="0.0015" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Help is not auto-generated" name="Test help for Get-BattleData.Help is not auto-generated" time="0.0029" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Has description" name="Test help for Get-BattleData.Has description" time="0.002" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Has example code" name="Test help for Get-BattleData.Has example code" time="0.002" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Has example help" name="Test help for Get-BattleData.Has example help" time="0.0037" asserts="0" success="True" result="Success" executed="True" />
             </results>
           </test-suite>
-          <test-suite type="TestFixture" name="Test help for Get-BattleLog" executed="True" result="Success" success="True" time="0.0936" asserts="0" description="Test help for Get-BattleLog">
+          <test-suite type="TestFixture" name="Test help for Get-BattleLog" executed="True" result="Success" success="True" time="0.3877" asserts="0" description="Test help for Get-BattleLog">
             <results>
-              <test-suite type="TestFixture" name="Test help for Get-BattleLog.Parameter PlayerTag" executed="True" result="Success" success="True" time="0.0148" asserts="0" description="Test help for Get-BattleLog.Parameter PlayerTag">
+              <test-suite type="TestFixture" name="Test help for Get-BattleLog.Parameter PlayerTag" executed="True" result="Success" success="True" time="0.0658" asserts="0" description="Test help for Get-BattleLog.Parameter PlayerTag">
                 <results>
-                  <test-case description="Has description" name="Test help for Get-BattleLog.Parameter PlayerTag.Has description" time="0.002" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="Has correct [mandatory] value" name="Test help for Get-BattleLog.Parameter PlayerTag.Has correct [mandatory] value" time="0.0016" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="Has correct parameter type" name="Test help for Get-BattleLog.Parameter PlayerTag.Has correct parameter type" time="0.0017" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has description" name="Test help for Get-BattleLog.Parameter PlayerTag.Has description" time="0.0024" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has correct [mandatory] value" name="Test help for Get-BattleLog.Parameter PlayerTag.Has correct [mandatory] value" time="0.002" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has correct parameter type" name="Test help for Get-BattleLog.Parameter PlayerTag.Has correct parameter type" time="0.002" asserts="0" success="True" result="Success" executed="True" />
                 </results>
               </test-suite>
-              <test-suite type="TestFixture" name="Test help for Get-BattleLog.Parameter Uri" executed="True" result="Success" success="True" time="0.0217" asserts="0" description="Test help for Get-BattleLog.Parameter Uri">
+              <test-suite type="TestFixture" name="Test help for Get-BattleLog.Parameter Uri" executed="True" result="Success" success="True" time="0.0746" asserts="0" description="Test help for Get-BattleLog.Parameter Uri">
                 <results>
-                  <test-case description="Has description" name="Test help for Get-BattleLog.Parameter Uri.Has description" time="0.002" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="Has correct [mandatory] value" name="Test help for Get-BattleLog.Parameter Uri.Has correct [mandatory] value" time="0.0016" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="Has correct parameter type" name="Test help for Get-BattleLog.Parameter Uri.Has correct parameter type" time="0.0016" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has description" name="Test help for Get-BattleLog.Parameter Uri.Has description" time="0.0022" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has correct [mandatory] value" name="Test help for Get-BattleLog.Parameter Uri.Has correct [mandatory] value" time="0.0019" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has correct parameter type" name="Test help for Get-BattleLog.Parameter Uri.Has correct parameter type" time="0.0022" asserts="0" success="True" result="Success" executed="True" />
                 </results>
               </test-suite>
-              <test-case description="Help is not auto-generated" name="Test help for Get-BattleLog.Help is not auto-generated" time="0.0022" asserts="0" success="True" result="Success" executed="True" />
-              <test-case description="Has description" name="Test help for Get-BattleLog.Has description" time="0.0017" asserts="0" success="True" result="Success" executed="True" />
-              <test-case description="Has example code" name="Test help for Get-BattleLog.Has example code" time="0.0019" asserts="0" success="True" result="Success" executed="True" />
-              <test-case description="Has example help" name="Test help for Get-BattleLog.Has example help" time="0.0017" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Help is not auto-generated" name="Test help for Get-BattleLog.Help is not auto-generated" time="0.0123" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Has description" name="Test help for Get-BattleLog.Has description" time="0.0133" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Has example code" name="Test help for Get-BattleLog.Has example code" time="0.0025" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Has example help" name="Test help for Get-BattleLog.Has example help" time="0.0284" asserts="0" success="True" result="Success" executed="True" />
             </results>
           </test-suite>
-          <test-suite type="TestFixture" name="Test help for Get-Brawler" executed="True" result="Success" success="True" time="0.1333" asserts="0" description="Test help for Get-Brawler">
+          <test-suite type="TestFixture" name="Test help for Get-Brawler" executed="True" result="Success" success="True" time="0.4448" asserts="0" description="Test help for Get-Brawler">
             <results>
-              <test-suite type="TestFixture" name="Test help for Get-Brawler.Parameter All" executed="True" result="Success" success="True" time="0.0172" asserts="0" description="Test help for Get-Brawler.Parameter All">
+              <test-suite type="TestFixture" name="Test help for Get-Brawler.Parameter All" executed="True" result="Success" success="True" time="0.0266" asserts="0" description="Test help for Get-Brawler.Parameter All">
                 <results>
-                  <test-case description="Has description" name="Test help for Get-Brawler.Parameter All.Has description" time="0.0045" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="Has correct [mandatory] value" name="Test help for Get-Brawler.Parameter All.Has correct [mandatory] value" time="0.0017" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="Has correct parameter type" name="Test help for Get-Brawler.Parameter All.Has correct parameter type" time="0.0016" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has description" name="Test help for Get-Brawler.Parameter All.Has description" time="0.0032" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has correct [mandatory] value" name="Test help for Get-Brawler.Parameter All.Has correct [mandatory] value" time="0.008" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has correct parameter type" name="Test help for Get-Brawler.Parameter All.Has correct parameter type" time="0.0032" asserts="0" success="True" result="Success" executed="True" />
                 </results>
               </test-suite>
-              <test-suite type="TestFixture" name="Test help for Get-Brawler.Parameter BrawlerID" executed="True" result="Success" success="True" time="0.0243" asserts="0" description="Test help for Get-Brawler.Parameter BrawlerID">
+              <test-suite type="TestFixture" name="Test help for Get-Brawler.Parameter BrawlerID" executed="True" result="Success" success="True" time="0.0375" asserts="0" description="Test help for Get-Brawler.Parameter BrawlerID">
                 <results>
-                  <test-case description="Has description" name="Test help for Get-Brawler.Parameter BrawlerID.Has description" time="0.0021" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="Has correct [mandatory] value" name="Test help for Get-Brawler.Parameter BrawlerID.Has correct [mandatory] value" time="0.0017" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="Has correct parameter type" name="Test help for Get-Brawler.Parameter BrawlerID.Has correct parameter type" time="0.0016" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has description" name="Test help for Get-Brawler.Parameter BrawlerID.Has description" time="0.0031" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has correct [mandatory] value" name="Test help for Get-Brawler.Parameter BrawlerID.Has correct [mandatory] value" time="0.0025" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has correct parameter type" name="Test help for Get-Brawler.Parameter BrawlerID.Has correct parameter type" time="0.0024" asserts="0" success="True" result="Success" executed="True" />
                 </results>
               </test-suite>
-              <test-suite type="TestFixture" name="Test help for Get-Brawler.Parameter Name" executed="True" result="Success" success="True" time="0.0315" asserts="0" description="Test help for Get-Brawler.Parameter Name">
+              <test-suite type="TestFixture" name="Test help for Get-Brawler.Parameter Name" executed="True" result="Success" success="True" time="0.0476" asserts="0" description="Test help for Get-Brawler.Parameter Name">
                 <results>
-                  <test-case description="Has description" name="Test help for Get-Brawler.Parameter Name.Has description" time="0.0022" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="Has correct [mandatory] value" name="Test help for Get-Brawler.Parameter Name.Has correct [mandatory] value" time="0.0016" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="Has correct parameter type" name="Test help for Get-Brawler.Parameter Name.Has correct parameter type" time="0.0016" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has description" name="Test help for Get-Brawler.Parameter Name.Has description" time="0.0027" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has correct [mandatory] value" name="Test help for Get-Brawler.Parameter Name.Has correct [mandatory] value" time="0.0022" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has correct parameter type" name="Test help for Get-Brawler.Parameter Name.Has correct parameter type" time="0.0022" asserts="0" success="True" result="Success" executed="True" />
                 </results>
               </test-suite>
-              <test-case description="Help is not auto-generated" name="Test help for Get-Brawler.Help is not auto-generated" time="0.0024" asserts="0" success="True" result="Success" executed="True" />
-              <test-case description="Has description" name="Test help for Get-Brawler.Has description" time="0.0015" asserts="0" success="True" result="Success" executed="True" />
-              <test-case description="Has example code" name="Test help for Get-Brawler.Has example code" time="0.0016" asserts="0" success="True" result="Success" executed="True" />
-              <test-case description="Has example help" name="Test help for Get-Brawler.Has example help" time="0.0017" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Help is not auto-generated" name="Test help for Get-Brawler.Help is not auto-generated" time="0.0029" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Has description" name="Test help for Get-Brawler.Has description" time="0.0021" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Has example code" name="Test help for Get-Brawler.Has example code" time="0.002" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Has example help" name="Test help for Get-Brawler.Has example help" time="0.0019" asserts="0" success="True" result="Success" executed="True" />
             </results>
           </test-suite>
-          <test-suite type="TestFixture" name="Test help for Get-BrawlerRanking" executed="True" result="Success" success="True" time="0.1795" asserts="0" description="Test help for Get-BrawlerRanking">
+          <test-suite type="TestFixture" name="Test help for Get-BrawlerRanking" executed="True" result="Success" success="True" time="0.5047" asserts="0" description="Test help for Get-BrawlerRanking">
             <results>
-              <test-suite type="TestFixture" name="Test help for Get-BrawlerRanking.Parameter BrawlerID" executed="True" result="Success" success="True" time="0.0146" asserts="0" description="Test help for Get-BrawlerRanking.Parameter BrawlerID">
+              <test-suite type="TestFixture" name="Test help for Get-BrawlerRanking.Parameter BrawlerID" executed="True" result="Success" success="True" time="0.0246" asserts="0" description="Test help for Get-BrawlerRanking.Parameter BrawlerID">
                 <results>
-                  <test-case description="Has description" name="Test help for Get-BrawlerRanking.Parameter BrawlerID.Has description" time="0.0019" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="Has correct [mandatory] value" name="Test help for Get-BrawlerRanking.Parameter BrawlerID.Has correct [mandatory] value" time="0.0017" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="Has correct parameter type" name="Test help for Get-BrawlerRanking.Parameter BrawlerID.Has correct parameter type" time="0.0017" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has description" name="Test help for Get-BrawlerRanking.Parameter BrawlerID.Has description" time="0.0026" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has correct [mandatory] value" name="Test help for Get-BrawlerRanking.Parameter BrawlerID.Has correct [mandatory] value" time="0.0022" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has correct parameter type" name="Test help for Get-BrawlerRanking.Parameter BrawlerID.Has correct parameter type" time="0.0066" asserts="0" success="True" result="Success" executed="True" />
                 </results>
               </test-suite>
-              <test-suite type="TestFixture" name="Test help for Get-BrawlerRanking.Parameter CountryCode" executed="True" result="Success" success="True" time="0.0241" asserts="0" description="Test help for Get-BrawlerRanking.Parameter CountryCode">
+              <test-suite type="TestFixture" name="Test help for Get-BrawlerRanking.Parameter CountryCode" executed="True" result="Success" success="True" time="0.033" asserts="0" description="Test help for Get-BrawlerRanking.Parameter CountryCode">
                 <results>
-                  <test-case description="Has description" name="Test help for Get-BrawlerRanking.Parameter CountryCode.Has description" time="0.0019" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has description" name="Test help for Get-BrawlerRanking.Parameter CountryCode.Has description" time="0.0023" asserts="0" success="True" result="Success" executed="True" />
                   <test-case description="Has correct [mandatory] value" name="Test help for Get-BrawlerRanking.Parameter CountryCode.Has correct [mandatory] value" time="0.0018" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="Has correct parameter type" name="Test help for Get-BrawlerRanking.Parameter CountryCode.Has correct parameter type" time="0.0016" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has correct parameter type" name="Test help for Get-BrawlerRanking.Parameter CountryCode.Has correct parameter type" time="0.0021" asserts="0" success="True" result="Success" executed="True" />
                 </results>
               </test-suite>
-              <test-suite type="TestFixture" name="Test help for Get-BrawlerRanking.Parameter Global" executed="True" result="Success" success="True" time="0.0312" asserts="0" description="Test help for Get-BrawlerRanking.Parameter Global">
+              <test-suite type="TestFixture" name="Test help for Get-BrawlerRanking.Parameter Global" executed="True" result="Success" success="True" time="0.0408" asserts="0" description="Test help for Get-BrawlerRanking.Parameter Global">
                 <results>
-                  <test-case description="Has description" name="Test help for Get-BrawlerRanking.Parameter Global.Has description" time="0.0018" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has description" name="Test help for Get-BrawlerRanking.Parameter Global.Has description" time="0.0021" asserts="0" success="True" result="Success" executed="True" />
                   <test-case description="Has correct [mandatory] value" name="Test help for Get-BrawlerRanking.Parameter Global.Has correct [mandatory] value" time="0.0017" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="Has correct parameter type" name="Test help for Get-BrawlerRanking.Parameter Global.Has correct parameter type" time="0.0016" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has correct parameter type" name="Test help for Get-BrawlerRanking.Parameter Global.Has correct parameter type" time="0.002" asserts="0" success="True" result="Success" executed="True" />
                 </results>
               </test-suite>
-              <test-suite type="TestFixture" name="Test help for Get-BrawlerRanking.Parameter Limit" executed="True" result="Success" success="True" time="0.038" asserts="0" description="Test help for Get-BrawlerRanking.Parameter Limit">
+              <test-suite type="TestFixture" name="Test help for Get-BrawlerRanking.Parameter Limit" executed="True" result="Success" success="True" time="0.0483" asserts="0" description="Test help for Get-BrawlerRanking.Parameter Limit">
                 <results>
-                  <test-case description="Has description" name="Test help for Get-BrawlerRanking.Parameter Limit.Has description" time="0.0018" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="Has correct [mandatory] value" name="Test help for Get-BrawlerRanking.Parameter Limit.Has correct [mandatory] value" time="0.0016" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="Has correct parameter type" name="Test help for Get-BrawlerRanking.Parameter Limit.Has correct parameter type" time="0.0016" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has description" name="Test help for Get-BrawlerRanking.Parameter Limit.Has description" time="0.002" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has correct [mandatory] value" name="Test help for Get-BrawlerRanking.Parameter Limit.Has correct [mandatory] value" time="0.0017" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has correct parameter type" name="Test help for Get-BrawlerRanking.Parameter Limit.Has correct parameter type" time="0.0017" asserts="0" success="True" result="Success" executed="True" />
                 </results>
               </test-suite>
-              <test-case description="Help is not auto-generated" name="Test help for Get-BrawlerRanking.Help is not auto-generated" time="0.0023" asserts="0" success="True" result="Success" executed="True" />
-              <test-case description="Has description" name="Test help for Get-BrawlerRanking.Has description" time="0.0015" asserts="0" success="True" result="Success" executed="True" />
-              <test-case description="Has example code" name="Test help for Get-BrawlerRanking.Has example code" time="0.0016" asserts="0" success="True" result="Success" executed="True" />
-              <test-case description="Has example help" name="Test help for Get-BrawlerRanking.Has example help" time="0.0018" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Help is not auto-generated" name="Test help for Get-BrawlerRanking.Help is not auto-generated" time="0.0028" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Has description" name="Test help for Get-BrawlerRanking.Has description" time="0.0027" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Has example code" name="Test help for Get-BrawlerRanking.Has example code" time="0.0024" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Has example help" name="Test help for Get-BrawlerRanking.Has example help" time="0.0024" asserts="0" success="True" result="Success" executed="True" />
             </results>
           </test-suite>
-          <test-suite type="TestFixture" name="Test help for Get-Club" executed="True" result="Success" success="True" time="0.201" asserts="0" description="Test help for Get-Club">
+          <test-suite type="TestFixture" name="Test help for Get-Club" executed="True" result="Success" success="True" time="0.5311" asserts="0" description="Test help for Get-Club">
             <results>
-              <test-suite type="TestFixture" name="Test help for Get-Club.Parameter ClubTag" executed="True" result="Success" success="True" time="0.0138" asserts="0" description="Test help for Get-Club.Parameter ClubTag">
+              <test-suite type="TestFixture" name="Test help for Get-Club.Parameter ClubTag" executed="True" result="Success" success="True" time="0.0166" asserts="0" description="Test help for Get-Club.Parameter ClubTag">
                 <results>
-                  <test-case description="Has description" name="Test help for Get-Club.Parameter ClubTag.Has description" time="0.0018" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="Has correct [mandatory] value" name="Test help for Get-Club.Parameter ClubTag.Has correct [mandatory] value" time="0.0016" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="Has correct parameter type" name="Test help for Get-Club.Parameter ClubTag.Has correct parameter type" time="0.0016" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has description" name="Test help for Get-Club.Parameter ClubTag.Has description" time="0.0021" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has correct [mandatory] value" name="Test help for Get-Club.Parameter ClubTag.Has correct [mandatory] value" time="0.0018" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has correct parameter type" name="Test help for Get-Club.Parameter ClubTag.Has correct parameter type" time="0.0018" asserts="0" success="True" result="Success" executed="True" />
                 </results>
               </test-suite>
-              <test-case description="Help is not auto-generated" name="Test help for Get-Club.Help is not auto-generated" time="0.0022" asserts="0" success="True" result="Success" executed="True" />
-              <test-case description="Has description" name="Test help for Get-Club.Has description" time="0.0015" asserts="0" success="True" result="Success" executed="True" />
-              <test-case description="Has example code" name="Test help for Get-Club.Has example code" time="0.0017" asserts="0" success="True" result="Success" executed="True" />
-              <test-case description="Has example help" name="Test help for Get-Club.Has example help" time="0.0015" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Help is not auto-generated" name="Test help for Get-Club.Help is not auto-generated" time="0.0029" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Has description" name="Test help for Get-Club.Has description" time="0.0017" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Has example code" name="Test help for Get-Club.Has example code" time="0.0018" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Has example help" name="Test help for Get-Club.Has example help" time="0.0017" asserts="0" success="True" result="Success" executed="True" />
             </results>
           </test-suite>
-          <test-suite type="TestFixture" name="Test help for Get-ClubMember" executed="True" result="Success" success="True" time="0.2241" asserts="0" description="Test help for Get-ClubMember">
+          <test-suite type="TestFixture" name="Test help for Get-ClubMember" executed="True" result="Success" success="True" time="0.5727" asserts="0" description="Test help for Get-ClubMember">
             <results>
-              <test-suite type="TestFixture" name="Test help for Get-ClubMember.Parameter ClubTag" executed="True" result="Success" success="True" time="0.0156" asserts="0" description="Test help for Get-ClubMember.Parameter ClubTag">
+              <test-suite type="TestFixture" name="Test help for Get-ClubMember.Parameter ClubTag" executed="True" result="Success" success="True" time="0.0257" asserts="0" description="Test help for Get-ClubMember.Parameter ClubTag">
                 <results>
-                  <test-case description="Has description" name="Test help for Get-ClubMember.Parameter ClubTag.Has description" time="0.0018" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="Has correct [mandatory] value" name="Test help for Get-ClubMember.Parameter ClubTag.Has correct [mandatory] value" time="0.0015" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="Has correct parameter type" name="Test help for Get-ClubMember.Parameter ClubTag.Has correct parameter type" time="0.0016" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has description" name="Test help for Get-ClubMember.Parameter ClubTag.Has description" time="0.0058" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has correct [mandatory] value" name="Test help for Get-ClubMember.Parameter ClubTag.Has correct [mandatory] value" time="0.0024" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has correct parameter type" name="Test help for Get-ClubMember.Parameter ClubTag.Has correct parameter type" time="0.0023" asserts="0" success="True" result="Success" executed="True" />
                 </results>
               </test-suite>
-              <test-case description="Help is not auto-generated" name="Test help for Get-ClubMember.Help is not auto-generated" time="0.0022" asserts="0" success="True" result="Success" executed="True" />
-              <test-case description="Has description" name="Test help for Get-ClubMember.Has description" time="0.0016" asserts="0" success="True" result="Success" executed="True" />
-              <test-case description="Has example code" name="Test help for Get-ClubMember.Has example code" time="0.0016" asserts="0" success="True" result="Success" executed="True" />
-              <test-case description="Has example help" name="Test help for Get-ClubMember.Has example help" time="0.0032" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Help is not auto-generated" name="Test help for Get-ClubMember.Help is not auto-generated" time="0.0048" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Has description" name="Test help for Get-ClubMember.Has description" time="0.0021" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Has example code" name="Test help for Get-ClubMember.Has example code" time="0.0023" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Has example help" name="Test help for Get-ClubMember.Has example help" time="0.0026" asserts="0" success="True" result="Success" executed="True" />
             </results>
           </test-suite>
-          <test-suite type="TestFixture" name="Test help for Get-ClubRanking" executed="True" result="Success" success="True" time="0.2591" asserts="0" description="Test help for Get-ClubRanking">
+          <test-suite type="TestFixture" name="Test help for Get-ClubRanking" executed="True" result="Success" success="True" time="0.6155" asserts="0" description="Test help for Get-ClubRanking">
             <results>
-              <test-suite type="TestFixture" name="Test help for Get-ClubRanking.Parameter CountryCode" executed="True" result="Success" success="True" time="0.0139" asserts="0" description="Test help for Get-ClubRanking.Parameter CountryCode">
+              <test-suite type="TestFixture" name="Test help for Get-ClubRanking.Parameter CountryCode" executed="True" result="Success" success="True" time="0.0156" asserts="0" description="Test help for Get-ClubRanking.Parameter CountryCode">
                 <results>
-                  <test-case description="Has description" name="Test help for Get-ClubRanking.Parameter CountryCode.Has description" time="0.0018" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="Has correct [mandatory] value" name="Test help for Get-ClubRanking.Parameter CountryCode.Has correct [mandatory] value" time="0.0016" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="Has correct parameter type" name="Test help for Get-ClubRanking.Parameter CountryCode.Has correct parameter type" time="0.0016" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has description" name="Test help for Get-ClubRanking.Parameter CountryCode.Has description" time="0.002" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has correct [mandatory] value" name="Test help for Get-ClubRanking.Parameter CountryCode.Has correct [mandatory] value" time="0.0017" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has correct parameter type" name="Test help for Get-ClubRanking.Parameter CountryCode.Has correct parameter type" time="0.0018" asserts="0" success="True" result="Success" executed="True" />
                 </results>
               </test-suite>
-              <test-suite type="TestFixture" name="Test help for Get-ClubRanking.Parameter Global" executed="True" result="Success" success="True" time="0.0206" asserts="0" description="Test help for Get-ClubRanking.Parameter Global">
+              <test-suite type="TestFixture" name="Test help for Get-ClubRanking.Parameter Global" executed="True" result="Success" success="True" time="0.0234" asserts="0" description="Test help for Get-ClubRanking.Parameter Global">
                 <results>
-                  <test-case description="Has description" name="Test help for Get-ClubRanking.Parameter Global.Has description" time="0.0018" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="Has correct [mandatory] value" name="Test help for Get-ClubRanking.Parameter Global.Has correct [mandatory] value" time="0.0016" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="Has correct parameter type" name="Test help for Get-ClubRanking.Parameter Global.Has correct parameter type" time="0.0016" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has description" name="Test help for Get-ClubRanking.Parameter Global.Has description" time="0.0019" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has correct [mandatory] value" name="Test help for Get-ClubRanking.Parameter Global.Has correct [mandatory] value" time="0.0019" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has correct parameter type" name="Test help for Get-ClubRanking.Parameter Global.Has correct parameter type" time="0.0019" asserts="0" success="True" result="Success" executed="True" />
                 </results>
               </test-suite>
-              <test-suite type="TestFixture" name="Test help for Get-ClubRanking.Parameter Limit" executed="True" result="Success" success="True" time="0.0272" asserts="0" description="Test help for Get-ClubRanking.Parameter Limit">
+              <test-suite type="TestFixture" name="Test help for Get-ClubRanking.Parameter Limit" executed="True" result="Success" success="True" time="0.0339" asserts="0" description="Test help for Get-ClubRanking.Parameter Limit">
                 <results>
-                  <test-case description="Has description" name="Test help for Get-ClubRanking.Parameter Limit.Has description" time="0.0018" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="Has correct [mandatory] value" name="Test help for Get-ClubRanking.Parameter Limit.Has correct [mandatory] value" time="0.0016" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="Has correct parameter type" name="Test help for Get-ClubRanking.Parameter Limit.Has correct parameter type" time="0.0015" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has description" name="Test help for Get-ClubRanking.Parameter Limit.Has description" time="0.0042" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has correct [mandatory] value" name="Test help for Get-ClubRanking.Parameter Limit.Has correct [mandatory] value" time="0.0018" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has correct parameter type" name="Test help for Get-ClubRanking.Parameter Limit.Has correct parameter type" time="0.002" asserts="0" success="True" result="Success" executed="True" />
                 </results>
               </test-suite>
-              <test-case description="Help is not auto-generated" name="Test help for Get-ClubRanking.Help is not auto-generated" time="0.0022" asserts="0" success="True" result="Success" executed="True" />
-              <test-case description="Has description" name="Test help for Get-ClubRanking.Has description" time="0.0015" asserts="0" success="True" result="Success" executed="True" />
-              <test-case description="Has example code" name="Test help for Get-ClubRanking.Has example code" time="0.0016" asserts="0" success="True" result="Success" executed="True" />
-              <test-case description="Has example help" name="Test help for Get-ClubRanking.Has example help" time="0.0015" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Help is not auto-generated" name="Test help for Get-ClubRanking.Help is not auto-generated" time="0.0026" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Has description" name="Test help for Get-ClubRanking.Has description" time="0.0017" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Has example code" name="Test help for Get-ClubRanking.Has example code" time="0.0017" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Has example help" name="Test help for Get-ClubRanking.Has example help" time="0.0017" asserts="0" success="True" result="Success" executed="True" />
             </results>
           </test-suite>
-          <test-suite type="TestFixture" name="Test help for Get-Player" executed="True" result="Success" success="True" time="0.2903" asserts="0" description="Test help for Get-Player">
+          <test-suite type="TestFixture" name="Test help for Get-Player" executed="True" result="Success" success="True" time="0.6472" asserts="0" description="Test help for Get-Player">
             <results>
-              <test-suite type="TestFixture" name="Test help for Get-Player.Parameter BestBrawler" executed="True" result="Success" success="True" time="0.0144" asserts="0" description="Test help for Get-Player.Parameter BestBrawler">
+              <test-suite type="TestFixture" name="Test help for Get-Player.Parameter BestBrawler" executed="True" result="Success" success="True" time="0.0152" asserts="0" description="Test help for Get-Player.Parameter BestBrawler">
                 <results>
-                  <test-case description="Has description" name="Test help for Get-Player.Parameter BestBrawler.Has description" time="0.0019" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="Has correct [mandatory] value" name="Test help for Get-Player.Parameter BestBrawler.Has correct [mandatory] value" time="0.0017" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has description" name="Test help for Get-Player.Parameter BestBrawler.Has description" time="0.002" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has correct [mandatory] value" name="Test help for Get-Player.Parameter BestBrawler.Has correct [mandatory] value" time="0.0018" asserts="0" success="True" result="Success" executed="True" />
                   <test-case description="Has correct parameter type" name="Test help for Get-Player.Parameter BestBrawler.Has correct parameter type" time="0.0017" asserts="0" success="True" result="Success" executed="True" />
                 </results>
               </test-suite>
-              <test-suite type="TestFixture" name="Test help for Get-Player.Parameter PlayerTag" executed="True" result="Success" success="True" time="0.0214" asserts="0" description="Test help for Get-Player.Parameter PlayerTag">
+              <test-suite type="TestFixture" name="Test help for Get-Player.Parameter PlayerTag" executed="True" result="Success" success="True" time="0.0228" asserts="0" description="Test help for Get-Player.Parameter PlayerTag">
                 <results>
                   <test-case description="Has description" name="Test help for Get-Player.Parameter PlayerTag.Has description" time="0.0019" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="Has correct [mandatory] value" name="Test help for Get-Player.Parameter PlayerTag.Has correct [mandatory] value" time="0.0017" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has correct [mandatory] value" name="Test help for Get-Player.Parameter PlayerTag.Has correct [mandatory] value" time="0.0018" asserts="0" success="True" result="Success" executed="True" />
                   <test-case description="Has correct parameter type" name="Test help for Get-Player.Parameter PlayerTag.Has correct parameter type" time="0.0017" asserts="0" success="True" result="Success" executed="True" />
                 </results>
               </test-suite>
-              <test-case description="Help is not auto-generated" name="Test help for Get-Player.Help is not auto-generated" time="0.0023" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Help is not auto-generated" name="Test help for Get-Player.Help is not auto-generated" time="0.0024" asserts="0" success="True" result="Success" executed="True" />
               <test-case description="Has description" name="Test help for Get-Player.Has description" time="0.0016" asserts="0" success="True" result="Success" executed="True" />
-              <test-case description="Has example code" name="Test help for Get-Player.Has example code" time="0.0016" asserts="0" success="True" result="Success" executed="True" />
-              <test-case description="Has example help" name="Test help for Get-Player.Has example help" time="0.0016" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Has example code" name="Test help for Get-Player.Has example code" time="0.0017" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Has example help" name="Test help for Get-Player.Has example help" time="0.0017" asserts="0" success="True" result="Success" executed="True" />
             </results>
           </test-suite>
-          <test-suite type="TestFixture" name="Test help for Get-PlayerRanking" executed="True" result="Success" success="True" time="0.3317" asserts="0" description="Test help for Get-PlayerRanking">
+          <test-suite type="TestFixture" name="Test help for Get-PlayerRanking" executed="True" result="Success" success="True" time="0.6925" asserts="0" description="Test help for Get-PlayerRanking">
             <results>
-              <test-suite type="TestFixture" name="Test help for Get-PlayerRanking.Parameter CountryCode" executed="True" result="Success" success="True" time="0.0148" asserts="0" description="Test help for Get-PlayerRanking.Parameter CountryCode">
+              <test-suite type="TestFixture" name="Test help for Get-PlayerRanking.Parameter CountryCode" executed="True" result="Success" success="True" time="0.0189" asserts="0" description="Test help for Get-PlayerRanking.Parameter CountryCode">
                 <results>
-                  <test-case description="Has description" name="Test help for Get-PlayerRanking.Parameter CountryCode.Has description" time="0.002" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="Has correct [mandatory] value" name="Test help for Get-PlayerRanking.Parameter CountryCode.Has correct [mandatory] value" time="0.0017" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="Has correct parameter type" name="Test help for Get-PlayerRanking.Parameter CountryCode.Has correct parameter type" time="0.0017" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has description" name="Test help for Get-PlayerRanking.Parameter CountryCode.Has description" time="0.0022" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has correct [mandatory] value" name="Test help for Get-PlayerRanking.Parameter CountryCode.Has correct [mandatory] value" time="0.0018" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has correct parameter type" name="Test help for Get-PlayerRanking.Parameter CountryCode.Has correct parameter type" time="0.0018" asserts="0" success="True" result="Success" executed="True" />
                 </results>
               </test-suite>
-              <test-suite type="TestFixture" name="Test help for Get-PlayerRanking.Parameter Global" executed="True" result="Success" success="True" time="0.0252" asserts="0" description="Test help for Get-PlayerRanking.Parameter Global">
+              <test-suite type="TestFixture" name="Test help for Get-PlayerRanking.Parameter Global" executed="True" result="Success" success="True" time="0.027" asserts="0" description="Test help for Get-PlayerRanking.Parameter Global">
                 <results>
-                  <test-case description="Has description" name="Test help for Get-PlayerRanking.Parameter Global.Has description" time="0.0019" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="Has correct [mandatory] value" name="Test help for Get-PlayerRanking.Parameter Global.Has correct [mandatory] value" time="0.0016" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="Has correct parameter type" name="Test help for Get-PlayerRanking.Parameter Global.Has correct parameter type" time="0.0048" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has description" name="Test help for Get-PlayerRanking.Parameter Global.Has description" time="0.002" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has correct [mandatory] value" name="Test help for Get-PlayerRanking.Parameter Global.Has correct [mandatory] value" time="0.0019" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has correct parameter type" name="Test help for Get-PlayerRanking.Parameter Global.Has correct parameter type" time="0.002" asserts="0" success="True" result="Success" executed="True" />
                 </results>
               </test-suite>
-              <test-suite type="TestFixture" name="Test help for Get-PlayerRanking.Parameter Limit" executed="True" result="Success" success="True" time="0.033" asserts="0" description="Test help for Get-PlayerRanking.Parameter Limit">
+              <test-suite type="TestFixture" name="Test help for Get-PlayerRanking.Parameter Limit" executed="True" result="Success" success="True" time="0.0367" asserts="0" description="Test help for Get-PlayerRanking.Parameter Limit">
                 <results>
-                  <test-case description="Has description" name="Test help for Get-PlayerRanking.Parameter Limit.Has description" time="0.002" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has description" name="Test help for Get-PlayerRanking.Parameter Limit.Has description" time="0.0027" asserts="0" success="True" result="Success" executed="True" />
                   <test-case description="Has correct [mandatory] value" name="Test help for Get-PlayerRanking.Parameter Limit.Has correct [mandatory] value" time="0.0022" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="Has correct parameter type" name="Test help for Get-PlayerRanking.Parameter Limit.Has correct parameter type" time="0.0016" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has correct parameter type" name="Test help for Get-PlayerRanking.Parameter Limit.Has correct parameter type" time="0.0019" asserts="0" success="True" result="Success" executed="True" />
                 </results>
               </test-suite>
-              <test-case description="Help is not auto-generated" name="Test help for Get-PlayerRanking.Help is not auto-generated" time="0.0023" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Help is not auto-generated" name="Test help for Get-PlayerRanking.Help is not auto-generated" time="0.0025" asserts="0" success="True" result="Success" executed="True" />
               <test-case description="Has description" name="Test help for Get-PlayerRanking.Has description" time="0.0017" asserts="0" success="True" result="Success" executed="True" />
-              <test-case description="Has example code" name="Test help for Get-PlayerRanking.Has example code" time="0.0017" asserts="0" success="True" result="Success" executed="True" />
-              <test-case description="Has example help" name="Test help for Get-PlayerRanking.Has example help" time="0.0016" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Has example code" name="Test help for Get-PlayerRanking.Has example code" time="0.0018" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Has example help" name="Test help for Get-PlayerRanking.Has example help" time="0.0045" asserts="0" success="True" result="Success" executed="True" />
             </results>
           </test-suite>
-          <test-suite type="TestFixture" name="Test help for Get-PowerPlayRanking" executed="True" result="Success" success="True" time="0.3828" asserts="0" description="Test help for Get-PowerPlayRanking">
+          <test-suite type="TestFixture" name="Test help for Get-PowerPlayRanking" executed="True" result="Success" success="True" time="0.7524" asserts="0" description="Test help for Get-PowerPlayRanking">
             <results>
-              <test-suite type="TestFixture" name="Test help for Get-PowerPlayRanking.Parameter CountryCode" executed="True" result="Success" success="True" time="0.0146" asserts="0" description="Test help for Get-PowerPlayRanking.Parameter CountryCode">
+              <test-suite type="TestFixture" name="Test help for Get-PowerPlayRanking.Parameter CountryCode" executed="True" result="Success" success="True" time="0.0215" asserts="0" description="Test help for Get-PowerPlayRanking.Parameter CountryCode">
                 <results>
-                  <test-case description="Has description" name="Test help for Get-PowerPlayRanking.Parameter CountryCode.Has description" time="0.0022" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="Has correct [mandatory] value" name="Test help for Get-PowerPlayRanking.Parameter CountryCode.Has correct [mandatory] value" time="0.0017" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="Has correct parameter type" name="Test help for Get-PowerPlayRanking.Parameter CountryCode.Has correct parameter type" time="0.0016" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has description" name="Test help for Get-PowerPlayRanking.Parameter CountryCode.Has description" time="0.0027" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has correct [mandatory] value" name="Test help for Get-PowerPlayRanking.Parameter CountryCode.Has correct [mandatory] value" time="0.0018" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has correct parameter type" name="Test help for Get-PowerPlayRanking.Parameter CountryCode.Has correct parameter type" time="0.0018" asserts="0" success="True" result="Success" executed="True" />
                 </results>
               </test-suite>
-              <test-suite type="TestFixture" name="Test help for Get-PowerPlayRanking.Parameter Limit" executed="True" result="Success" success="True" time="0.0231" asserts="0" description="Test help for Get-PowerPlayRanking.Parameter Limit">
+              <test-suite type="TestFixture" name="Test help for Get-PowerPlayRanking.Parameter Limit" executed="True" result="Success" success="True" time="0.0331" asserts="0" description="Test help for Get-PowerPlayRanking.Parameter Limit">
                 <results>
-                  <test-case description="Has description" name="Test help for Get-PowerPlayRanking.Parameter Limit.Has description" time="0.0019" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="Has correct [mandatory] value" name="Test help for Get-PowerPlayRanking.Parameter Limit.Has correct [mandatory] value" time="0.0018" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="Has correct parameter type" name="Test help for Get-PowerPlayRanking.Parameter Limit.Has correct parameter type" time="0.0025" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has description" name="Test help for Get-PowerPlayRanking.Parameter Limit.Has description" time="0.0039" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has correct [mandatory] value" name="Test help for Get-PowerPlayRanking.Parameter Limit.Has correct [mandatory] value" time="0.0022" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has correct parameter type" name="Test help for Get-PowerPlayRanking.Parameter Limit.Has correct parameter type" time="0.0021" asserts="0" success="True" result="Success" executed="True" />
                 </results>
               </test-suite>
-              <test-suite type="TestFixture" name="Test help for Get-PowerPlayRanking.Parameter SeasonID" executed="True" result="Success" success="True" time="0.033" asserts="0" description="Test help for Get-PowerPlayRanking.Parameter SeasonID">
+              <test-suite type="TestFixture" name="Test help for Get-PowerPlayRanking.Parameter SeasonID" executed="True" result="Success" success="True" time="0.0417" asserts="0" description="Test help for Get-PowerPlayRanking.Parameter SeasonID">
                 <results>
-                  <test-case description="Has description" name="Test help for Get-PowerPlayRanking.Parameter SeasonID.Has description" time="0.0028" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="Has correct [mandatory] value" name="Test help for Get-PowerPlayRanking.Parameter SeasonID.Has correct [mandatory] value" time="0.0024" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="Has correct parameter type" name="Test help for Get-PowerPlayRanking.Parameter SeasonID.Has correct parameter type" time="0.0023" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has description" name="Test help for Get-PowerPlayRanking.Parameter SeasonID.Has description" time="0.0022" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has correct [mandatory] value" name="Test help for Get-PowerPlayRanking.Parameter SeasonID.Has correct [mandatory] value" time="0.0025" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has correct parameter type" name="Test help for Get-PowerPlayRanking.Parameter SeasonID.Has correct parameter type" time="0.0017" asserts="0" success="True" result="Success" executed="True" />
                 </results>
               </test-suite>
-              <test-suite type="TestFixture" name="Test help for Get-PowerPlayRanking.Parameter Uri" executed="True" result="Success" success="True" time="0.0432" asserts="0" description="Test help for Get-PowerPlayRanking.Parameter Uri">
+              <test-suite type="TestFixture" name="Test help for Get-PowerPlayRanking.Parameter Uri" executed="True" result="Success" success="True" time="0.0499" asserts="0" description="Test help for Get-PowerPlayRanking.Parameter Uri">
                 <results>
-                  <test-case description="Has description" name="Test help for Get-PowerPlayRanking.Parameter Uri.Has description" time="0.0044" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="Has correct [mandatory] value" name="Test help for Get-PowerPlayRanking.Parameter Uri.Has correct [mandatory] value" time="0.0019" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="Has correct parameter type" name="Test help for Get-PowerPlayRanking.Parameter Uri.Has correct parameter type" time="0.0017" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has description" name="Test help for Get-PowerPlayRanking.Parameter Uri.Has description" time="0.0026" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has correct [mandatory] value" name="Test help for Get-PowerPlayRanking.Parameter Uri.Has correct [mandatory] value" time="0.0017" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has correct parameter type" name="Test help for Get-PowerPlayRanking.Parameter Uri.Has correct parameter type" time="0.0018" asserts="0" success="True" result="Success" executed="True" />
                 </results>
               </test-suite>
-              <test-case description="Help is not auto-generated" name="Test help for Get-PowerPlayRanking.Help is not auto-generated" time="0.0024" asserts="0" success="True" result="Success" executed="True" />
-              <test-case description="Has description" name="Test help for Get-PowerPlayRanking.Has description" time="0.0015" asserts="0" success="True" result="Success" executed="True" />
-              <test-case description="Has example code" name="Test help for Get-PowerPlayRanking.Has example code" time="0.0015" asserts="0" success="True" result="Success" executed="True" />
-              <test-case description="Has example help" name="Test help for Get-PowerPlayRanking.Has example help" time="0.0016" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Help is not auto-generated" name="Test help for Get-PowerPlayRanking.Help is not auto-generated" time="0.0029" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Has description" name="Test help for Get-PowerPlayRanking.Has description" time="0.0021" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Has example code" name="Test help for Get-PowerPlayRanking.Has example code" time="0.002" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Has example help" name="Test help for Get-PowerPlayRanking.Has example help" time="0.0021" asserts="0" success="True" result="Success" executed="True" />
             </results>
           </test-suite>
-          <test-suite type="TestFixture" name="Test help for Get-PowerPlaySeasonID" executed="True" result="Success" success="True" time="0.4198" asserts="0" description="Test help for Get-PowerPlaySeasonID">
+          <test-suite type="TestFixture" name="Test help for Get-PowerPlaySeasonID" executed="True" result="Success" success="True" time="0.7971" asserts="0" description="Test help for Get-PowerPlaySeasonID">
             <results>
-              <test-suite type="TestFixture" name="Test help for Get-PowerPlaySeasonID.Parameter CountryCode" executed="True" result="Success" success="True" time="0.0149" asserts="0" description="Test help for Get-PowerPlaySeasonID.Parameter CountryCode">
+              <test-suite type="TestFixture" name="Test help for Get-PowerPlaySeasonID.Parameter CountryCode" executed="True" result="Success" success="True" time="0.0159" asserts="0" description="Test help for Get-PowerPlaySeasonID.Parameter CountryCode">
                 <results>
-                  <test-case description="Has description" name="Test help for Get-PowerPlaySeasonID.Parameter CountryCode.Has description" time="0.0019" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="Has correct [mandatory] value" name="Test help for Get-PowerPlaySeasonID.Parameter CountryCode.Has correct [mandatory] value" time="0.0017" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="Has correct parameter type" name="Test help for Get-PowerPlaySeasonID.Parameter CountryCode.Has correct parameter type" time="0.0016" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has description" name="Test help for Get-PowerPlaySeasonID.Parameter CountryCode.Has description" time="0.0021" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has correct [mandatory] value" name="Test help for Get-PowerPlaySeasonID.Parameter CountryCode.Has correct [mandatory] value" time="0.0018" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has correct parameter type" name="Test help for Get-PowerPlaySeasonID.Parameter CountryCode.Has correct parameter type" time="0.0018" asserts="0" success="True" result="Success" executed="True" />
                 </results>
               </test-suite>
-              <test-suite type="TestFixture" name="Test help for Get-PowerPlaySeasonID.Parameter Date" executed="True" result="Success" success="True" time="0.0218" asserts="0" description="Test help for Get-PowerPlaySeasonID.Parameter Date">
+              <test-suite type="TestFixture" name="Test help for Get-PowerPlaySeasonID.Parameter Date" executed="True" result="Success" success="True" time="0.0273" asserts="0" description="Test help for Get-PowerPlaySeasonID.Parameter Date">
                 <results>
-                  <test-case description="Has description" name="Test help for Get-PowerPlaySeasonID.Parameter Date.Has description" time="0.0019" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="Has correct [mandatory] value" name="Test help for Get-PowerPlaySeasonID.Parameter Date.Has correct [mandatory] value" time="0.0017" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="Has correct parameter type" name="Test help for Get-PowerPlaySeasonID.Parameter Date.Has correct parameter type" time="0.0017" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has description" name="Test help for Get-PowerPlaySeasonID.Parameter Date.Has description" time="0.0056" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has correct [mandatory] value" name="Test help for Get-PowerPlaySeasonID.Parameter Date.Has correct [mandatory] value" time="0.0019" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has correct parameter type" name="Test help for Get-PowerPlaySeasonID.Parameter Date.Has correct parameter type" time="0.0018" asserts="0" success="True" result="Success" executed="True" />
                 </results>
               </test-suite>
-              <test-suite type="TestFixture" name="Test help for Get-PowerPlaySeasonID.Parameter Limit" executed="True" result="Success" success="True" time="0.0287" asserts="0" description="Test help for Get-PowerPlaySeasonID.Parameter Limit">
+              <test-suite type="TestFixture" name="Test help for Get-PowerPlaySeasonID.Parameter Limit" executed="True" result="Success" success="True" time="0.035" asserts="0" description="Test help for Get-PowerPlaySeasonID.Parameter Limit">
                 <results>
-                  <test-case description="Has description" name="Test help for Get-PowerPlaySeasonID.Parameter Limit.Has description" time="0.0018" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="Has correct [mandatory] value" name="Test help for Get-PowerPlaySeasonID.Parameter Limit.Has correct [mandatory] value" time="0.0016" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="Has correct parameter type" name="Test help for Get-PowerPlaySeasonID.Parameter Limit.Has correct parameter type" time="0.0017" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has description" name="Test help for Get-PowerPlaySeasonID.Parameter Limit.Has description" time="0.002" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has correct [mandatory] value" name="Test help for Get-PowerPlaySeasonID.Parameter Limit.Has correct [mandatory] value" time="0.0017" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has correct parameter type" name="Test help for Get-PowerPlaySeasonID.Parameter Limit.Has correct parameter type" time="0.0019" asserts="0" success="True" result="Success" executed="True" />
                 </results>
               </test-suite>
-              <test-case description="Help is not auto-generated" name="Test help for Get-PowerPlaySeasonID.Help is not auto-generated" time="0.0025" asserts="0" success="True" result="Success" executed="True" />
-              <test-case description="Has description" name="Test help for Get-PowerPlaySeasonID.Has description" time="0.0016" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Help is not auto-generated" name="Test help for Get-PowerPlaySeasonID.Help is not auto-generated" time="0.0027" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Has description" name="Test help for Get-PowerPlaySeasonID.Has description" time="0.0017" asserts="0" success="True" result="Success" executed="True" />
               <test-case description="Has example code" name="Test help for Get-PowerPlaySeasonID.Has example code" time="0.0017" asserts="0" success="True" result="Success" executed="True" />
-              <test-case description="Has example help" name="Test help for Get-PowerPlaySeasonID.Has example help" time="0.0017" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Has example help" name="Test help for Get-PowerPlaySeasonID.Has example help" time="0.0018" asserts="0" success="True" result="Success" executed="True" />
             </results>
           </test-suite>
-          <test-suite type="TestFixture" name="Test help for New-BrawlKeyFile" executed="True" result="Success" success="True" time="0.454" asserts="0" description="Test help for New-BrawlKeyFile">
+          <test-suite type="TestFixture" name="Test help for New-BrawlKeyFile" executed="True" result="Success" success="True" time="0.8286" asserts="0" description="Test help for New-BrawlKeyFile">
             <results>
-              <test-suite type="TestFixture" name="Test help for New-BrawlKeyFile.Parameter Directory" executed="True" result="Success" success="True" time="0.0163" asserts="0" description="Test help for New-BrawlKeyFile.Parameter Directory">
+              <test-suite type="TestFixture" name="Test help for New-BrawlKeyFile.Parameter Directory" executed="True" result="Success" success="True" time="0.0152" asserts="0" description="Test help for New-BrawlKeyFile.Parameter Directory">
                 <results>
-                  <test-case description="Has description" name="Test help for New-BrawlKeyFile.Parameter Directory.Has description" time="0.0019" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="Has correct [mandatory] value" name="Test help for New-BrawlKeyFile.Parameter Directory.Has correct [mandatory] value" time="0.0016" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="Has correct parameter type" name="Test help for New-BrawlKeyFile.Parameter Directory.Has correct parameter type" time="0.0016" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has description" name="Test help for New-BrawlKeyFile.Parameter Directory.Has description" time="0.002" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has correct [mandatory] value" name="Test help for New-BrawlKeyFile.Parameter Directory.Has correct [mandatory] value" time="0.0017" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has correct parameter type" name="Test help for New-BrawlKeyFile.Parameter Directory.Has correct parameter type" time="0.0017" asserts="0" success="True" result="Success" executed="True" />
                 </results>
               </test-suite>
-              <test-suite type="TestFixture" name="Test help for New-BrawlKeyFile.Parameter SecretName" executed="True" result="Success" success="True" time="0.0262" asserts="0" description="Test help for New-BrawlKeyFile.Parameter SecretName">
+              <test-suite type="TestFixture" name="Test help for New-BrawlKeyFile.Parameter SecretName" executed="True" result="Success" success="True" time="0.0232" asserts="0" description="Test help for New-BrawlKeyFile.Parameter SecretName">
                 <results>
-                  <test-case description="Has description" name="Test help for New-BrawlKeyFile.Parameter SecretName.Has description" time="0.0019" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="Has correct [mandatory] value" name="Test help for New-BrawlKeyFile.Parameter SecretName.Has correct [mandatory] value" time="0.0027" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="Has correct parameter type" name="Test help for New-BrawlKeyFile.Parameter SecretName.Has correct parameter type" time="0.0029" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has description" name="Test help for New-BrawlKeyFile.Parameter SecretName.Has description" time="0.0025" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has correct [mandatory] value" name="Test help for New-BrawlKeyFile.Parameter SecretName.Has correct [mandatory] value" time="0.0017" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has correct parameter type" name="Test help for New-BrawlKeyFile.Parameter SecretName.Has correct parameter type" time="0.0017" asserts="0" success="True" result="Success" executed="True" />
                 </results>
               </test-suite>
               <test-case description="Help is not auto-generated" name="Test help for New-BrawlKeyFile.Help is not auto-generated" time="0.0023" asserts="0" success="True" result="Success" executed="True" />
               <test-case description="Has description" name="Test help for New-BrawlKeyFile.Has description" time="0.0017" asserts="0" success="True" result="Success" executed="True" />
               <test-case description="Has example code" name="Test help for New-BrawlKeyFile.Has example code" time="0.0017" asserts="0" success="True" result="Success" executed="True" />
-              <test-case description="Has example help" name="Test help for New-BrawlKeyFile.Has example help" time="0.0016" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Has example help" name="Test help for New-BrawlKeyFile.Has example help" time="0.0018" asserts="0" success="True" result="Success" executed="True" />
             </results>
           </test-suite>
-          <test-suite type="TestFixture" name="Test help for Test-PowerPlayDate" executed="True" result="Success" success="True" time="0.4844" asserts="0" description="Test help for Test-PowerPlayDate">
+          <test-suite type="TestFixture" name="Test help for Test-PowerPlayDate" executed="True" result="Success" success="True" time="0.8545" asserts="0" description="Test help for Test-PowerPlayDate">
             <results>
-              <test-suite type="TestFixture" name="Test help for Test-PowerPlayDate.Parameter Date" executed="True" result="Success" success="True" time="0.0173" asserts="0" description="Test help for Test-PowerPlayDate.Parameter Date">
+              <test-suite type="TestFixture" name="Test help for Test-PowerPlayDate.Parameter Date" executed="True" result="Success" success="True" time="0.0176" asserts="0" description="Test help for Test-PowerPlayDate.Parameter Date">
                 <results>
-                  <test-case description="Has description" name="Test help for Test-PowerPlayDate.Parameter Date.Has description" time="0.0022" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has description" name="Test help for Test-PowerPlayDate.Parameter Date.Has description" time="0.002" asserts="0" success="True" result="Success" executed="True" />
                   <test-case description="Has correct [mandatory] value" name="Test help for Test-PowerPlayDate.Parameter Date.Has correct [mandatory] value" time="0.0021" asserts="0" success="True" result="Success" executed="True" />
                   <test-case description="Has correct parameter type" name="Test help for Test-PowerPlayDate.Parameter Date.Has correct parameter type" time="0.0018" asserts="0" success="True" result="Success" executed="True" />
                 </results>
               </test-suite>
-              <test-case description="Help is not auto-generated" name="Test help for Test-PowerPlayDate.Help is not auto-generated" time="0.0028" asserts="0" success="True" result="Success" executed="True" />
-              <test-case description="Has description" name="Test help for Test-PowerPlayDate.Has description" time="0.0017" asserts="0" success="True" result="Success" executed="True" />
-              <test-case description="Has example code" name="Test help for Test-PowerPlayDate.Has example code" time="0.0018" asserts="0" success="True" result="Success" executed="True" />
-              <test-case description="Has example help" name="Test help for Test-PowerPlayDate.Has example help" time="0.0023" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Help is not auto-generated" name="Test help for Test-PowerPlayDate.Help is not auto-generated" time="0.0024" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Has description" name="Test help for Test-PowerPlayDate.Has description" time="0.0036" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Has example code" name="Test help for Test-PowerPlayDate.Has example code" time="0.0017" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Has example help" name="Test help for Test-PowerPlayDate.Has example help" time="0.0017" asserts="0" success="True" result="Success" executed="True" />
             </results>
           </test-suite>
         </results>
       </test-suite>
-      <test-suite type="TestFixture" name="C:\Users\nrvonogd\Documents\Github\Posh-Brawl\tests\Manifest.tests.ps1" executed="True" result="Ignored" success="True" time="0.0929" asserts="0" description="C:\Users\nrvonogd\Documents\Github\Posh-Brawl\tests\Manifest.tests.ps1">
+      <test-suite type="TestFixture" name="C:\Users\nrvonogd\Documents\Github\Posh-Brawl\tests\Manifest.tests.ps1" executed="True" result="Ignored" success="True" time="0.1945" asserts="0" description="C:\Users\nrvonogd\Documents\Github\Posh-Brawl\tests\Manifest.tests.ps1">
         <results>
-          <test-suite type="TestFixture" name="Module manifest" executed="True" result="Success" success="True" time="0.0217" asserts="0" description="Module manifest">
+          <test-suite type="TestFixture" name="Module manifest" executed="True" result="Success" success="True" time="0.0766" asserts="0" description="Module manifest">
             <results>
-              <test-suite type="TestFixture" name="Module manifest.Validation" executed="True" result="Success" success="True" time="0.02" asserts="0" description="Module manifest.Validation">
+              <test-suite type="TestFixture" name="Module manifest.Validation" executed="True" result="Success" success="True" time="0.0749" asserts="0" description="Module manifest.Validation">
                 <results>
-                  <test-case description="Has a valid manifest" name="Module manifest.Validation.Has a valid manifest" time="0.0024" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="Has a valid name in the manifest" name="Module manifest.Validation.Has a valid name in the manifest" time="0.0017" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="Has a valid root module" name="Module manifest.Validation.Has a valid root module" time="0.0016" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="Has a valid version in the manifest" name="Module manifest.Validation.Has a valid version in the manifest" time="0.0015" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="Has a valid description" name="Module manifest.Validation.Has a valid description" time="0.0022" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="Has a valid author" name="Module manifest.Validation.Has a valid author" time="0.0014" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="Has a valid guid" name="Module manifest.Validation.Has a valid guid" time="0.0017" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="Has a valid copyright" name="Module manifest.Validation.Has a valid copyright" time="0.0015" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="Has a valid version in the changelog" name="Module manifest.Validation.Has a valid version in the changelog" time="0.0018" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="Changelog and manifest versions are the same" name="Module manifest.Validation.Changelog and manifest versions are the same" time="0.0018" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has a valid manifest" name="Module manifest.Validation.Has a valid manifest" time="0.0077" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has a valid name in the manifest" name="Module manifest.Validation.Has a valid name in the manifest" time="0.0057" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has a valid root module" name="Module manifest.Validation.Has a valid root module" time="0.0058" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has a valid version in the manifest" name="Module manifest.Validation.Has a valid version in the manifest" time="0.0076" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has a valid description" name="Module manifest.Validation.Has a valid description" time="0.0063" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has a valid author" name="Module manifest.Validation.Has a valid author" time="0.0059" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has a valid guid" name="Module manifest.Validation.Has a valid guid" time="0.0154" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has a valid copyright" name="Module manifest.Validation.Has a valid copyright" time="0.0063" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has a valid version in the changelog" name="Module manifest.Validation.Has a valid version in the changelog" time="0.0056" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Changelog and manifest versions are the same" name="Module manifest.Validation.Changelog and manifest versions are the same" time="0.0065" asserts="0" success="True" result="Success" executed="True" />
                 </results>
               </test-suite>
             </results>
           </test-suite>
-          <test-suite type="TestFixture" name="Git tagging" executed="True" result="Ignored" success="True" time="0.0259" asserts="0" description="Git tagging">
+          <test-suite type="TestFixture" name="Git tagging" executed="True" result="Ignored" success="True" time="0.0828" asserts="0" description="Git tagging">
             <results>
-              <test-case description="Is tagged with a valid version" name="Git tagging.Is tagged with a valid version" time="0.0015" asserts="0" success="False" result="Ignored" executed="False" />
-              <test-case description="Matches manifest version" name="Git tagging.Matches manifest version" time="0.001" asserts="0" success="False" result="Ignored" executed="False" />
+              <test-case description="Is tagged with a valid version" name="Git tagging.Is tagged with a valid version" time="0.0035" asserts="0" success="False" result="Ignored" executed="False" />
+              <test-case description="Matches manifest version" name="Git tagging.Matches manifest version" time="0.0011" asserts="0" success="False" result="Ignored" executed="False" />
             </results>
           </test-suite>
         </results>
       </test-suite>
-      <test-suite type="TestFixture" name="C:\Users\nrvonogd\Documents\Github\Posh-Brawl\tests\Meta.tests.ps1" executed="True" result="Success" success="True" time="0.0764" asserts="0" description="C:\Users\nrvonogd\Documents\Github\Posh-Brawl\tests\Meta.tests.ps1">
+      <test-suite type="TestFixture" name="C:\Users\nrvonogd\Documents\Github\Posh-Brawl\tests\Meta.tests.ps1" executed="True" result="Success" success="True" time="0.1298" asserts="0" description="C:\Users\nrvonogd\Documents\Github\Posh-Brawl\tests\Meta.tests.ps1">
         <results>
-          <test-suite type="TestFixture" name="Text files formatting" executed="True" result="Success" success="True" time="0.0088" asserts="0" description="Text files formatting">
+          <test-suite type="TestFixture" name="Text files formatting" executed="True" result="Success" success="True" time="0.0177" asserts="0" description="Text files formatting">
             <results>
-              <test-suite type="TestFixture" name="Text files formatting.File encoding" executed="True" result="Success" success="True" time="0.0039" asserts="0" description="Text files formatting.File encoding">
+              <test-suite type="TestFixture" name="Text files formatting.File encoding" executed="True" result="Success" success="True" time="0.0088" asserts="0" description="Text files formatting.File encoding">
                 <results>
-                  <test-case description="No text file uses Unicode/UTF-16 encoding" name="Text files formatting.File encoding.No text file uses Unicode/UTF-16 encoding" time="0.0024" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="No text file uses Unicode/UTF-16 encoding" name="Text files formatting.File encoding.No text file uses Unicode/UTF-16 encoding" time="0.0072" asserts="0" success="True" result="Success" executed="True" />
                 </results>
               </test-suite>
-              <test-suite type="TestFixture" name="Text files formatting.Indentations" executed="True" result="Success" success="True" time="0.0074" asserts="0" description="Text files formatting.Indentations">
+              <test-suite type="TestFixture" name="Text files formatting.Indentations" executed="True" result="Success" success="True" time="0.016" asserts="0" description="Text files formatting.Indentations">
                 <results>
-                  <test-case description="No text file use tabs for indentations" name="Text files formatting.Indentations.No text file use tabs for indentations" time="0.002" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="No text file use tabs for indentations" name="Text files formatting.Indentations.No text file use tabs for indentations" time="0.0056" asserts="0" success="True" result="Success" executed="True" />
                 </results>
               </test-suite>
             </results>

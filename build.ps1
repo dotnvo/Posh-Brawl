@@ -28,7 +28,7 @@ if ($Bootstrap.IsPresent) {
         if (-not (Get-Module -Name PSDepend -ListAvailable)) {
             Install-Module -Name PSDepend -Repository PSGallery -Scope CurrentUser -Force
         }
-        Import-Module -Name PSDepend -Verbose:$false
+        Import-Module -Name PSDepend -Verbose:$true
         Invoke-PSDepend -Path './requirements.psd1' -Install -Import -Force -WarningAction SilentlyContinue
     } else {
         Write-Warning 'No [requirements.psd1] found. Skipping build dependency installation.'
