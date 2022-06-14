@@ -8,7 +8,7 @@ jobs:
       fail-fast: false
     steps:
     - uses: actions/checkout@v3
-    - name: Test
+    - name: Test and Publish
       shell: pwsh
       env:
         APIKEY: ${{ secrets.APIKEY }}

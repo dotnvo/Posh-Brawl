@@ -97,7 +97,7 @@
         PSData = @{
 
             # Tags applied to this module. These help with module discovery in online galleries.
-            Tags = @('powershell', 'brawlstars', 'brawl stars', 'supercell', 'api', 'powershell api wrapper')
+            Tags = @('powershell', 'brawlstars', 'brawlstars', 'supercell', 'brawlapi')
 
             # A URL to the license for this module.
             LicenseUri = ''
